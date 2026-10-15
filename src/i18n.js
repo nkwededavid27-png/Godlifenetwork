@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
         joinButton2: "Join our community",
         watchButton2: "Watch Online",
 
-        heroTitle3: "Join Us This Sunday",
+        heroTitle3: "Join our next event",
         heroSubtitle3: "Discover the power of God’s Word in your life.",
         joinButton3: "Join our community",
         watchButton3: "Watch Online",
@@ -198,7 +198,7 @@ i18n.use(initReactI18next).init({
         heroTitle2: "Bienvenue dans Notre Communauté",
         heroSubtitle2:
           "Vivez l’adoration, la communion et la croissance ensemble.",
-        joinButton2: "Rejoignez notre communauté",
+        joinButton2: "Rejoignez notre prochain événement",
         watchButton2: "Regardez en ligne",
 
         heroTitle3: "Rejoignez-nous ce dimanche",

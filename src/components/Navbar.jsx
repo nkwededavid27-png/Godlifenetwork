@@ -1,13 +1,19 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Godlifelogo from "../assets/Godlife-logo.png";
-import Godlifelogo2 from "../assets/Godlife-logo2.png";
+import Godlifelogo2 from "../assets/godlife-logo2.png";
 import { useTranslation } from "react-i18next";
 
 
 function Navmenu() {
 
     const { t, i18n } = useTranslation();  // <-- this gives you t() and i18n
+    const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+    const toggleLanguage = () => {
+        const newLang = isEnglish ? "fr" : "en";
+        i18n.changeLanguage(newLang);
+        setIsEnglish(!isEnglish);
+    };
 
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -44,7 +50,7 @@ function Navmenu() {
                         <NavLink to="/">
                             <img
                                 alt="Godlife Network- Alter of Worship"
-                                width={scrolled ? 80 : 120}
+                                width={scrolled ? 70 : 110}
                                 height={40}
                                 className="object-contain transition-all duration-300 ease-in-out border-4 border-red-600 rounded-2xl"
                                 src={scrolled ? Godlifelogo2 : Godlifelogo}
@@ -139,16 +145,20 @@ function Navmenu() {
                                     {t("contact")}
                                 </NavLink>
 
-                                <select
-                                    value={i18n.language}
-                                    onChange={(e) => i18n.changeLanguage(e.target.value)}
-                                    className={`px-2 py-1 rounded-md border ${scrolled ? 'text-black' : 'text-white'} border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-red-600`}
+                                <button
+                                    onClick={toggleLanguage}
+                                    className={`relative inline-flex items-center h-6 w-12 rounded-full transition-colors ${scrolled ? "bg-gray-300" : "bg-white/30"
+                                        }`}
                                 >
-                                    <option className=" text-black" value="en">EN</option>
-                                    <option className=" text-black" value="fr">FR</option>
-                                </select>
+                                    <span
+                                        className={`inline-block w-5 h-5 transform rounded-full bg-red-600 transition-transform ${isEnglish ? "translate-x-1" : "translate-x-6"
+                                            }`}
+                                    />
+                                    <span className="absolute left-1 text-xs font-bold text-black">EN</span>
+                                    <span className="absolute right-1 text-xs font-bold text-black">FR</span>
+                                </button>
 
-                                
+
                             </div>
 
                             {/* Mobile Menu Button */}
@@ -209,15 +219,19 @@ function Navmenu() {
                                     }>
                                         {t("contact")}
                                     </NavLink>
-                                
-                                    <select
-                                        value={i18n.language}
-                                        onChange={(e) => i18n.changeLanguage(e.target.value)}
-                                        className={`px-1 py-1 right-0 rounded-md border ${scrolled ? 'text-black' : 'text-white'} border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-red-600`}
+
+                                    <button
+                                        onClick={toggleLanguage}
+                                        className={`relative inline-flex items-center h-6 w-12 rounded-full transition-colors ${scrolled ? "bg-gray-300" : "bg-white/30"
+                                            }`}
                                     >
-                                        <option className=" text-black text-sm" value="en">EN</option>
-                                        <option className=" text-black text-sm" value="fr">FR</option>
-                                    </select>
+                                        <span
+                                            className={`inline-block w-5 h-5 transform rounded-full bg-red-600 transition-transform ${isEnglish ? "translate-x-1" : "translate-x-6"
+                                                }`}
+                                        />
+                                        <span className="absolute left-1 text-xs font-bold text-black">EN</span>
+                                        <span className="absolute right-1 text-xs font-bold text-black">FR</span>
+                                    </button>
                                 </div>
                             </div>
 
