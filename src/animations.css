@@ -1,0 +1,29 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up,
+.slide-up-delay,
+.slide-up-delay2 {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-up.active {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.slide-up-delay.active {
+  animation: slideUp 0.8s ease-out 0.5s forwards; /* delay */
+}
+
+.slide-up-delay2.active {
+  animation: slideUp 0.8s ease-out 1s forwards; /* longer delay */
+}
