@@ -185,38 +185,58 @@ function Navmenu() {
 
                             {/* Mobile Menu */}
                             <div
-                                className={` lg:hidden overflow-hidden transition-all duration-500  ease-in-out 
-              ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"} 
-              ${scrolled ? "bg-white text-black" : "bg-black text-white"}`}
+                                className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out 
+    ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"} 
+    ${scrolled ? "bg-white text-black" : "bg-black text-white"}`}
                             >
                                 <div className="flex flex-col items-start p-4 space-y-2 overflow-y-auto">
-                                    <NavLink to="/" className={({ isActive }) =>
-                                        isActive ? "font-bold text-red-600" : "font-bold"
-                                    }>
+                                    <NavLink
+                                        to="/"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
                                         {t("home")}
                                     </NavLink>
 
-                                    <NavLink to="/About" className={({ isActive }) =>
-                                        isActive ? "font-bold text-red-600" : "font-bold"
-                                    }>
+                                    <NavLink
+                                        to="/About"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
                                         {t("about")}
                                     </NavLink>
 
-                                    <NavLink to="/Event" className={({ isActive }) =>
-                                        isActive ? "font-bold text-red-600" : "font-bold"
-                                    }>
+                                    <NavLink
+                                        to="/Event"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
                                         {t("event")}
                                     </NavLink>
 
-                                    <NavLink to="/Blog" className={({ isActive }) =>
-                                        isActive ? "font-bold text-red-600" : "font-bold"
-                                    }>
+                                    <NavLink
+                                        to="/Blog"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
                                         {t("blog")}
                                     </NavLink>
 
-                                    <NavLink to="/q" className={({ isActive }) =>
-                                        isActive ? "font-bold text-red-600" : "font-bold"
-                                    }>
+                                    <NavLink
+                                        to="/q"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
                                         {t("contact")}
                                     </NavLink>
 
@@ -234,6 +254,7 @@ function Navmenu() {
                                     </button>
                                 </div>
                             </div>
+
 
                         </nav>
                     </div>
