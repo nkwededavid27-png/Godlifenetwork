@@ -3,6 +3,8 @@ import { Globe, Heart, HeartPulse, SquareArrowRightEnter } from 'lucide-react'
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import img1 from '../assets/img1.jpeg'
+import AOFPP from '../assets/AOFPP.jpg'
+import AOWF from '../assets/AOWF.jpg'
 import { NavLink } from "react-router-dom";
 
 
@@ -93,7 +95,7 @@ export default function Home() {
                     <div className="card bg-base-100 w-85 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
-                            <img src="https://scontent.fcoo1-2.fna.fbcdn.net/v/t39.30808-6/650047984_122275098380203666_296561835076798875_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x960&ctp=s1440x960&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGCjyLDOdMwK_6gLQbtQU3uTRMPW2UCQa5NEw9bZQJBrnHwCSKT_OLEA2BwPNFtd__HgMK1lcH2T6po9HM-RSLT&_nc_ohc=vL8qGj0byRAQ7kNvwHUKzX6&_nc_oc=Ado85nQnE6mXSM4CLEvHAag3z8xUxZf2TVvdfx05WNnuY5yZW7-dinfBW5-tYMta-xU&_nc_zt=23&_nc_ht=scontent.fcoo1-2.fna&_nc_gid=2wz2HbW-rN45hfZfsmdktg&_nc_ss=7b2a8&oh=00_AQM0wKDobxLKeNXM42RP_T9yKuKJVUzc9ClQhxw4vMoNtA&oe=6ACEC5AF" alt="Events" className="rounded-xl" />
+                            <img src={AOWF} alt="Events" className="rounded-xl" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title uppercase">{t("event2Title")}</h2>
@@ -107,7 +109,7 @@ export default function Home() {
                     <div className="card bg-base-100 w-85 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
-                            <img src="https://scontent.fcoo1-2.fna.fbcdn.net/v/t39.30808-6/557982485_122249298782203666_2484322232177844263_n.jpg?stp=dst-jpg_tt6&cstp=mx1296x864&ctp=s1296x864&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGKuFJ_cjZ0nSQ8ic2c5olZcqt_VKuKWHZyq39Uq4pYdt_Ki0tbIz1HrGHeLCYkg_oXL0tSZm3NcIfQBOXkAnIH&_nc_ohc=u3wbYqnzgu0Q7kNvwEgxj5-&_nc_oc=AdpFkqq6KCua4SPaRmbVo1f0t8T7_pXJUME3r7-JNrskViv10zSmit9OydF-m2L4HWQ&_nc_zt=23&_nc_ht=scontent.fcoo1-2.fna&_nc_gid=Bjn2Ta78EJY4zWU8JuLXwQ&_nc_ss=7b2a8&oh=00_AQMzEsLmSfGJAsTieSoK5evF_mtMMelEqAlYifqPno8jOQ&oe=6ACEDF3D" alt="Events" className="rounded-xl" />
+                            <img src={AOFPP} alt="Events" className="rounded-xl" />
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title uppercase">{t("event3Title")}</h2>
