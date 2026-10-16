@@ -135,7 +135,7 @@ export default function About() {
                     <img
                         src="https://scontent.fcoo1-2.fna.fbcdn.net/v/t39.30808-6/828480955_122305963214203666_5455756936612491227_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeERCQwGuFOwBC-rwUSSfSMHQb3EiQu3VlBBvcSJC7dWUBOJElu4UT37-Vm1Su2JhMT1qD41kroiuf5xkWl8Psjb&_nc_ohc=XaVmh0p5FCAQ7kNvwGrD0KC&_nc_oc=Adpqi0VAveBPLUK4ibigbnRIFc04Si3Pey_ueq3i4Ks7p1Sy21VgnO87wjx5_CTWhKw&_nc_zt=23&_nc_ht=scontent.fcoo1-2.fna&_nc_gid=IlDq2zNAjbgt4fjnLO7XNg&_nc_ss=7a2a8&oh=00_AQOSl_t4Ghx8886sxYdfpUjeJW4FXCgUWtU10D_Qya3jsA&oe=6AD31A76" // replace with your actual image path
                         alt="The GLN community gathering for worship and fellowship"
-                        className="object-cover absolute inset-0 w-full h-full m-auto"
+                        className="object-cover absolute inset-0 w-full h-full  border-red-600 shadow-xl shadow-red-600 rounded-2xl m-auto"
                     />
                 </div>
             </div>
@@ -183,7 +183,7 @@ export default function About() {
                         <img
                             src={pastorimg} // replace with your actual image path
                             alt="The GLN leader"
-                            className="object-cover absolute inset-0 h-120 rounded-lg  w-full lg:h-full"
+                            className="object-cover absolute inset-0 h-120 rounded-lg   w-full lg:h-full"
                         />
                     </div>
 
@@ -258,7 +258,7 @@ export default function About() {
                 {/* Grid */}
                 <div className="flex justify-center pb-10 ">
                     {/* Mission */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg">
+                    <div className="bg-white p-8 shadow-lg rounded-lg  border-red-600  shadow-red-600 ">
 
                         {t("homologeoDeclarations", { returnObjects: true }).map((line, index) => (
                             <p

@@ -66,7 +66,7 @@ export default function Home() {
 
             </div>
 
-            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl ">
+            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4">
                 <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">
                     {t("prevEventsTitle")}
                 </div>
@@ -143,11 +143,11 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl ">
+            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4 ">
                 <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">
                     {t("upcomingEventsTitle")}
                 </div>
- 
+
 
                 <p className="text-lg lg:text-xl text-center text-black pt-10">
                     {t("upcomingEventsDesc")}
@@ -227,32 +227,44 @@ export default function Home() {
                     </span>
                 </div>
 
-                {/* Heading */}
-                <h2 className="text-4xl sm:text-5xl font-display font-bold text-dark mb-6 tracking-tight">
-                    {t("homologeoTitle")}
-                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:p-10 pt-20">
+                    <div>
+                        <img
+                            className=" w-85 sm:w-130 md:w-150 lg:w-270 h-150 object-cover border border-red-600 shadow-lg shadow-red-600 rounded-lg m-auto"
+                            src="https://i.pinimg.com/1200x/8a/e9/06/8ae906e3c778b493bd6c0253fbcacc38.jpg" alt="Homologeo section" />
+                    </div>
 
-                {/* Description */}
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
-                    {t("homologeoDesc")}
-                </p>
+                    <div>
+                        {/* Heading */}
+                        <h2 className="text-4xl sm:text-5xl font-display font-bold text-dark mb-6 tracking-tight">
+                            {t("homologeoTitle")}
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+                            {t("homologeoDesc")}
+                        </p>
 
 
 
-                <div className="flex items-center justify-center pt-10 lg:pt-0">
-                    <NavLink
-                        to="/About"
-                        className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
-                    >
-                        {t("homologeoBtn")} <SquareArrowRightEnter className="ml-3" />
-                    </NavLink>
+                        <div className="flex items-center justify-center pt-10 lg:pt-0">
+                            <NavLink
+                                to="/About"
+                                className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
+                            >
+                                {t("homologeoBtn")} <SquareArrowRightEnter className="ml-3" />
+                            </NavLink>
+                        </div>
+
+                        <div>
+                            <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
+                                <a href="">{t("followFacebookBtn")}</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
-                        <a href="">{t("followFacebookBtn")}</a>
-                    </button>
-                </div>
+
             </div>
 
             <div className="text-center mb-0 pt-20 bg-[#f5f3f3] rounded-3xl">
@@ -263,34 +275,48 @@ export default function Home() {
                     </span>
                 </div>
 
-                {/* Heading */}
-                <h2 className="text-4xl sm:text-5xl font-display font-bold bg-linear-to-r from-red-900 via-yellow-600 to-pink-900 bg-clip-text text-transparent mb-6 tracking-tight">
-                    {t("contactTitle")}
-                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:p-10 pt-20">
+                    
 
-                {/* Description */}
-                <p className="text-xl text-black max-w-2xl mx-auto  mb-12 p-5">
-                    {t("contactDesc")}
-                </p>
+                    <div>
+                        {/* Heading */}
+                        <h2 className="text-4xl sm:text-5xl font-display font-bold bg-linear-to-r from-red-900 via-yellow-600 to-pink-900 bg-clip-text text-transparent mb-6 tracking-tight">
+                            {t("contactTitle")}
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-xl text-black max-w-2xl mx-auto  mb-12 p-5">
+                            {t("contactDesc")}
+                        </p>
 
 
 
-                <div className="flex items-center justify-center pt-10 lg:pt-0">
-                    <NavLink
-                        to="/"
-                        className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
-                    >
-                        {t("contactBtn")} <SquareArrowRightEnter className="ml-3" />
-                    </NavLink>
+                        <div className="flex items-center justify-center pt-10 lg:pt-0">
+                            <NavLink
+                                to="/"
+                                className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
+                            >
+                                {t("contactBtn")} <SquareArrowRightEnter className="ml-3" />
+                            </NavLink>
+                        </div>
+
+                        <div>
+                            <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-black hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
+                                <a href="">{t("followFacebookBtn")}</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img
+                            className=" w-85 sm:w-130 md:w-150 lg:w-270 h-150 object-center border border-red-600 shadow-lg shadow-red-600 rounded-2xl m-auto"
+                            src="https://i.pinimg.com/1200x/86/a3/47/86a3479836bc571d11c42f4351362081.jpg" alt="Homologeo section" />
+                    </div>
+
                 </div>
 
-                <div>
-                    <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-black hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
-                        <a href="">{t("followFacebookBtn")}</a>
-                    </button>
-                </div>
             </div>
-            
+
 
         </div>
     );

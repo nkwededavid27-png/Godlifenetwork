@@ -82,7 +82,7 @@ export default function Event() {
                     {/* Event Cards Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pl-12 lg:pl-24">
                         {/* Event Card 1 */}
-                        <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 w-full lg:w-full flex flex-col h-full">
+                        <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 w-full lg:w-full flex flex-col h-full shadow-lg shadow-[#ba1414]">
                             <div className="h-2 w-full relative overflow-hidden bg-purple-500">
                                 <div className="absolute inset-0 opacity-50 group-hover:opacity-0 transition-opacity duration-300 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.4)_0px,rgba(255,255,255,0.4)_8px,transparent_8px,transparent_24px)]"></div>
                             </div>
@@ -136,7 +136,7 @@ export default function Event() {
                             </div>
                         </div>
 
-                        <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 flex flex-col h-full">
+                        <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 flex flex-col h-full shadow-lg shadow-[#ba1414]">
                             <div className="h-2 w-full relative overflow-hidden bg-green-500">
                                 <div className="absolute inset-0 opacity-50 group-hover:opacity-0 transition-opacity duration-300 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.4)_0px,rgba(255,255,255,0.4)_8px,transparent_8px,transparent_24px)]"></div>
                             </div>
@@ -218,8 +218,8 @@ export default function Event() {
 
                     <div className="flex justify-center grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
 
-                        {/* Midweek Koinonia */}
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-10 hover:bg-white/10 transition-colors group w-full">
+                        {/* monthly service */}
+                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-10 hover:bg-white/10 transition-colors group w-full   shadow-lg shadow-[#e7e7e8] ">
                             <div className="flex items-start gap-6">
                                 <div className="w-14 h-14 rounded-lg bg-red-500/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                                     <svg

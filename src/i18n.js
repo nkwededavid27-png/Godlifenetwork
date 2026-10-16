@@ -10,6 +10,7 @@ i18n.use(initReactI18next).init({
         about: "About",
         event: "Event",
         blog: "Blog",
+        media: "Media",
         contact: "Contact",
 
         //hero banner translation
@@ -187,6 +188,7 @@ i18n.use(initReactI18next).init({
         about: "À propos",
         event: "Événement",
         blog: "Blog",
+        media: "Media",
         contact: "Contact",
 
         //hero banner translation

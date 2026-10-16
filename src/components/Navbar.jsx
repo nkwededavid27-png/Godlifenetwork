@@ -128,9 +128,24 @@ function Navmenu() {
                                     {t("blog")}
                                 </NavLink>
 
+                                <NavLink
+                                    to="/m"
+                                    onClick={() => setOpen(false)}
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? scrolled
+                                                ? "nav-link font-bold active  text-red-600"
+                                                : "nav-link font-bold text-2xl text-red-600"
+                                            : scrolled
+                                                ? "nav-link font-bold active  text-black "
+                                                : "nav-link font-bold text-2xl text-white"
+                                    }
+                                >
+                                    {t("media")}
+                                </NavLink>
 
                                 <NavLink
-                                    to="/k"
+                                    to="/Contact"
                                     onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
@@ -238,6 +253,16 @@ function Navmenu() {
                                         }
                                     >
                                         {t("contact")}
+                                    </NavLink>
+
+                                    <NavLink
+                                        to="/m"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
+                                        {t("media")}
                                     </NavLink>
 
                                     <button

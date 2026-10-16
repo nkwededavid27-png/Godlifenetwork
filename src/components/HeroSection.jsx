@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 function HeroSection() {
     const { t, } = useTranslation();
     return (
-        <section className="relative h-screen overflow-hidden bg-black">
+        <section className="relative h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}

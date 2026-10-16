@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 
 
 
+
 function App() {
   
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Event" element={<Event />} />
           <Route path="/Blog" element={<Blog />} />
+          
         </Routes>
       </main>
     </>
