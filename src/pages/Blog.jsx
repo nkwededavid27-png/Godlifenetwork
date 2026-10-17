@@ -10,7 +10,7 @@ export default function BlogSection() {
                 <div className="absolute inset-0">
                     <img
                         alt="Banner 2"
-                        src="/Word-hero.jpeg"
+                        src="/blog-banner.jpg"
                         className="object-cover absolute inset-0 w-full h-full"
                     />
                     <div className="absolute inset-0 bg-linear-to-r bg-black/80  to-transparent"></div>
