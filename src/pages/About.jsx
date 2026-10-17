@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import pastorimg from '../assets/pastorimg.png'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import FloatingCard from "../components/FloatingCard";
+
 
 
 export default function About() {
@@ -44,7 +44,7 @@ export default function About() {
 
             </section>
 
-            <FloatingCard />
+            
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-10 pt-20">
                 {/* Left Column - Text */}

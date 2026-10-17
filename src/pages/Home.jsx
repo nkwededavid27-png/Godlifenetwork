@@ -6,7 +6,7 @@ import img1 from '../assets/img1.jpeg'
 import AOFPP from '../assets/AOFPP.jpg'
 import AOWF from '../assets/AOWF.jpg'
 import { NavLink } from "react-router-dom";
-import FloatingCard from "../components/FloatingCard";
+
 
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
 
             </div>
 
-            <FloatingCard />
+            
 
 
             <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4">

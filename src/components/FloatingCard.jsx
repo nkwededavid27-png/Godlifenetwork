@@ -118,7 +118,7 @@ const FloatingCard = () => {
 
     return (
         <div className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 
-                w-72 sm:w-96 md:w-md lg:w-md z-30">
+                w-72 sm:w-96 md:w-md lg:w-200 z-30">
             <div className="flex justify-between items-center mb-2">
                 <h2 className="text-lg text-red-600 font-semibold">{t("Dhomologeo")}</h2>
                 <button

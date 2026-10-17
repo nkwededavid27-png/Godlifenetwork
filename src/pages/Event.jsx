@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import FloatingCard from "../components/FloatingCard";
+
 
 export default function Event() {
     const { t, } = useTranslation();
@@ -53,7 +53,7 @@ export default function Event() {
                 </div>
             </section>
 
-            <FloatingCard />
+            
 
             <div className="space-y-16 pt-20 p-10">
                 {/* Timeline Header */}

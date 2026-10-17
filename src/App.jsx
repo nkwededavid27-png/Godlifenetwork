@@ -6,6 +6,7 @@ import About from './pages/About';
 import Event from './pages/Event';
 import ScrollToTop from './components/ScrollToTop';
 import Blog from './pages/Blog';
+import FloatingCard from './components/FloatingCard';
 
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Navmenu />
+      <FloatingCard />
       <main>
         <ScrollToTop />
         <Routes>

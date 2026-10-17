@@ -1,5 +1,5 @@
 
-import FloatingCard from "../components/FloatingCard";
+
 
 
 export default function BlogSection() {
@@ -41,7 +41,6 @@ export default function BlogSection() {
 
             </section>
 
-            <FloatingCard />
         </>
     );
 }
