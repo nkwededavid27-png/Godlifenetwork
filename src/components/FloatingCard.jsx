@@ -117,7 +117,7 @@ const FloatingCard = () => {
     if (!visible) return null;
 
     return (
-        <div className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 w-90 sm:w-120 md:w-100 lg:w-200 z-30 ">
+        <div className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 w-80 sm:w-120 md:w-100 lg:w-200 z-30 ">
             <div className="flex justify-between items-center mb-2 ">
                 <h2 className="text-lg text-red-600 font-semibold ">{t("Dhomologeo")}</h2>
                 <button
@@ -133,7 +133,7 @@ const FloatingCard = () => {
                         key={idx}
                         src={src}
                         alt={`Photo ${idx + 1}`}
-                        className="w-full h-80 object-cover rounded"
+                        className="w-full h-75 md:h-100 lg:h-80 object-cover rounded"
                     />
                 ))}
             </div>
