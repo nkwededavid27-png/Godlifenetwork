@@ -52,7 +52,7 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-20 pb-20">
 
-                    <div className="card bg-base-100 w-85 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="card bg-base-100 w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
                             <img src={img1} alt="Events" className="rounded-xl" />
@@ -66,7 +66,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-85 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="card bg-base-100 w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
                             <img src={AOWF} alt="Events" className="rounded-xl" />
@@ -80,7 +80,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-85 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="card bg-base-100 w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
                             <img src={AOFPP} alt="Events" className="rounded-xl" />
