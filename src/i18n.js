@@ -33,7 +33,7 @@ i18n.use(initReactI18next).init({
 
         welcomeHome: "Welcome Home",
       welcomeTitle: "Welcome to ",
-      welcomeTitle1: "The God Life Network",
+      welcomeTitle1: "The GodLife Network",
       welcomeDesc: "GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God; offer quality praise and worship to God and receive biblical teachings based on the gospel of God's grace. We also reach out to lost souls to help them receive and enjoy the love of Christ and become part of God's family.",
       welcomeDesc1:"You're welcome.",
       loveTitle: "HONOUR",
@@ -84,7 +84,7 @@ i18n.use(initReactI18next).init({
       
 
       //translations for about page
-      aboutHeroTitle: "About God Life Network",
+      aboutHeroTitle: "About GodLife Network",
       aboutHeroSubtitle: "Get to know us more.",
       aboutHeroButton: "🏠 Our Story",
       
@@ -150,7 +150,7 @@ i18n.use(initReactI18next).init({
       leaderTitle: "Our Leader",
       leaderSubtitle: "Meet the dedicated leader who guide our church community",
       leaderName: "Apostle Ifeanyi Ewim",
-      leaderRole: "Lead Pastor and Apostolic Head of The God Life Network",
+      leaderRole: "Lead Pastor and Apostolic Head of The GodLife Network",
       
       upcomingEventsTitle1: "Upcoming Events",
       addCalendarButton: "Do well to Add to your Calendar",
