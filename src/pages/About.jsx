@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import pastorimg from '../assets/pastorimg.png'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import FloatingCard from "../components/FloatingCard";
 
 
 export default function About() {
@@ -38,19 +39,12 @@ export default function About() {
                         </div>
 
                     </div>
-                    <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white z-10">
-                        <div className="flex flex-col items-center space-y-2">
-                            <span className="text-sm font-medium tracking-wider uppercase opacity-80">
-                                {t("Scroll")}
-                            </span>
-                            <div className="w-6 h-12 border-2 border-white/40 rounded-full flex justify-center relative">
-                                <div className="w-1.5 h-4 bg-white/80 rounded-full mt-2 animate-bounce"></div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
 
             </section>
+
+            <FloatingCard />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-10 pt-20">
                 {/* Left Column - Text */}

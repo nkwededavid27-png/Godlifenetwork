@@ -16,32 +16,32 @@ i18n.use(initReactI18next).init({
         //hero banner translation
         heroTitle1: "Rooted in the Word of His Grace",
         heroSubtitle1: "Nourished by the Word of His Grace — Acts 20:32",
-        joinButton1: "Join Us This Sunday",
-        watchButton1: "Watch Online",
+        joinButton1: "View blog page for sermon",
+       
 
         heroTitle2: "Welcome to Our Community",
         heroSubtitle2: "Experience worship, fellowship, and growth together.",
-        joinButton2: "Join our community",
-        watchButton2: "Watch Online",
+        joinButton2: "Join our WhatsApp community",
+       
 
         heroTitle3: "Join our next event",
-        heroSubtitle3: "Discover the power of God’s Word in your life.",
-        joinButton3: "Join our community",
-        watchButton3: "Watch Online",
+        heroSubtitle3: "Fellowship and partnership with us in our next event and experience the mighty move of God.",
+        joinButton3: "View our upcoming event",
+        
 
-        Scroll:'Scroll',
+        Dhomologeo:'Daily homologeo',
 
         welcomeHome: "Welcome Home",
       welcomeTitle: "Welcome to ",
       welcomeTitle1: "The God Life Network",
-      welcomeDesc: "We are a Word-based, Spirit-filled and praise-full family where the Love Of God In Christ is lived out daily. Here, you'll grow in grace, experience true worship, build real relationships, and encounter the power of God and his faithfulness.",
+      welcomeDesc: "GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God; offer quality praise and worship to God and receive biblical teachings based on the gospel of God's grace. We also reach out to lost souls to help them receive and enjoy the love of Christ and become part of God's family.",
       welcomeDesc1:"You're welcome.",
-      loveTitle: "Love",
-      loveDesc: "What we preach — the message of grace, truth, and Jesus.",
-      lifeTitle: "Life",
-      lifeDesc: "What we give — a family where you grow, belong, and flourish.",
-      impactTitle: "Impact",
-      impactDesc: "What we do — transforming lives and communities by the Spirit.",
+      loveTitle: "HONOUR",
+      loveDesc: "The mark of worship is honour. As true worshippers, we must constantly honour and reverence God in our worship and services to Him.",
+      lifeTitle: "EXCELLENCE",
+      lifeDesc: "We must constantly deliver excellence in our service to God at all times because He deserves the best. Mediocrity will never be tolerated in our midst.",
+      impactTitle: "SPIRITUALITY",
+      impactDesc: "We must always subject whatever we do to the leading of the Spirit. We do not put our trust in the flesh. As true worshippers, we must always involve the Holy Spirit in all we do.",
       
 
       prevEventsTitle: "Our previous Events",
@@ -72,8 +72,8 @@ i18n.use(initReactI18next).init({
 
 
       homologeoTagline: "Daily Growth",
-      homologeoTitle: "Join Our Homologeo",
-      homologeoDesc: "Grow deeper in your faith with our daily declarations through daily Bible reading plans on homologeo page and Facebook.",
+      homologeoTitle: "Our Daily Declarations",
+      homologeoDesc: "Start your day with our daily declarations on our About page.",
       homologeoBtn: "View About Page",
       followFacebookBtn: "Follow on Facebook",
 
@@ -114,7 +114,7 @@ i18n.use(initReactI18next).init({
       spiritualityTitle: "SPIRITUALITY",
       spiritualityText: "We must always subject whatever we do to the leading of the Spirit. We do not put our trust in the flesh. As true worshippers, we must always involve the Holy Spirit in all we do. (Romans 8:14, John 15:5).",
 
-      homologeoTitle1: "Our HOMOLOGEO",
+      homologeoTitle1: "Our Daily Declarations",
       homologeoDeclarations: [
         "I am a new creation.",
         "I am born of God.",
@@ -194,26 +194,25 @@ i18n.use(initReactI18next).init({
         //hero banner translation
         heroTitle1: "Enraciné dans la Parole de Sa Grâce",
         heroSubtitle1: "Nourri par la Parole de Sa Grâce — Actes 20:32",
-        joinButton1: "Rejoignez-nous ce dimanche",
-        watchButton1: "Regardez en ligne",
+        joinButton1: " Voir la page du blog pour le sermon",
+      
 
         heroTitle2: "Bienvenue dans Notre Communauté",
         heroSubtitle2:
           "Vivez l’adoration, la communion et la croissance ensemble.",
-        joinButton2: "Rejoignez notre prochain événement",
-        watchButton2: "Regardez en ligne",
+        joinButton2: "Rejoignez notre communauté WhatsApp",
+       
 
-        heroTitle3: "Rejoignez-nous ce dimanche",
+        heroTitle3: "Rejoignez notre prochain événement",
         heroSubtitle3:
-          "Découvrez la puissance de la Parole de Dieu dans votre vie.",
-        joinButton3: "Rejoignez notre communauté",
-        watchButton3: "Regardez en ligne",
-
-        Scroll:'Faire défiler',
+          "Communiez et partenariat avec nous lors de notre prochain événement et vivez la puissante manifestation de Dieu.",
+        joinButton3: " Voir notre prochain événement",
+        
+        Dhomologeo:'Homologéo Quotidien',
 
         welcomeHome: "Bienvenue à la maison",
       welcomeTitle: "Bienvenue sur ",
-      welcomeDesc: "Nous sommes une famille fondée sur la Parole, remplie de l'Esprit et pleine de louange où l'Amour de Dieu en Christ est vécu chaque jour. Ici, vous grandirez dans la grâce, expérimenterez une véritable adoration, construirez de vraies relations et rencontrerez la puissance de Dieu et sa fidélité.",
+      welcomeDesc: "GodLife Network International est une communauté chrétienne où les croyants qui ont reçu la vie de Christ se réunissent dans l'amour pour communier les uns avec les autres et avec l'Esprit de Dieu ; offrir une louange et une adoration de qualité à Dieu et recevoir des enseignements bibliques basés sur l'Évangile de la grâce de Dieu. Nous allons également à la rencontre des âmes perdues pour les aider à recevoir et à jouir de l'amour de Christ et à devenir membres de la famille de Dieu.",
       welcomeDesc1:" Vous êtes les bienvenus.",
       loveTitle: "Amour",
       loveDesc: "Ce que nous prêchons — le message de grâce, de vérité et de Jésus.",
@@ -252,8 +251,8 @@ i18n.use(initReactI18next).init({
 
 
       homologeoTagline: "Croissance quotidienne",
-      homologeoTitle: "Rejoignez notre Homologeo",
-      homologeoDesc: "Approfondissez votre foi avec nos déclarations quotidiennes à travers des plans de lecture biblique sur la page homologeo et Facebook.",
+      homologeoTitle: "Nos Déclarations Quotidiennes",
+      homologeoDesc: "Commencez votre journée avec nos déclarations quotidiennes sur notre page À propos.",
       homologeoBtn: "Voir la page À propos",
       followFacebookBtn: "Suivre sur Facebook",
 
@@ -292,7 +291,7 @@ i18n.use(initReactI18next).init({
       spiritualityTitle: "SPIRITUALITÉ",
       spiritualityText: "Nous devons toujours soumettre tout ce que nous faisons à la direction de l'Esprit. Nous ne mettons pas notre confiance dans la chair. En tant que vrais adorateurs, nous devons toujours impliquer le Saint-Esprit dans tout ce que nous faisons. (Romains 8:14, Jean 15:5).",
 
-      homologeoTitle1: "Notre HOMOLOGEO",
+      homologeoTitle1: "Nos Déclarations Quotidiennes",
       homologeoDeclarations: [
         "Je suis une nouvelle création.",
         "Je suis né de Dieu.",

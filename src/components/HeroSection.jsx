@@ -3,6 +3,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { NavLink } from "react-router-dom";
 
 
 function HeroSection() {
@@ -53,12 +54,11 @@ function HeroSection() {
                                     {t("heroSubtitle1")}
                                 </p>
                                 <div className="flex justify-center gap-4 slide-up-delay2">
-                                    <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                        {t("joinButton1")}
-                                    </button>
-                                    <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                        {t("watchButton1")}
-                                    </button>
+                                    <NavLink to='/Blog'>
+                                        <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
+                                            {t("joinButton1")}
+                                        </button>
+                                    </NavLink>
                                 </div>
                             </div>
 
@@ -89,9 +89,7 @@ function HeroSection() {
                                     <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                         {t("joinButton2")}
                                     </button>
-                                    <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                        {t("watchButton2")}
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -118,12 +116,11 @@ function HeroSection() {
                                     {t("heroSubtitle3")}
                                 </p>
                                 <div className="flex justify-center gap-4 slide-up-delay2">
-                                    <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                        {t("joinButton3")}
-                                    </button>
-                                    <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                        {t("watchButton3")}
-                                    </button>
+                                    <NavLink to='/Event'>
+                                        <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
+                                            {t("joinButton3")}
+                                        </button>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -131,18 +128,9 @@ function HeroSection() {
                 </SwiperSlide>
             </Swiper>
 
-            <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white z-10">
-                <div className="flex flex-col items-center space-y-2">
-                    <span className="text-sm font-medium tracking-wider uppercase opacity-80">
-                        {t("Scroll")}
-                    </span>
-                    <div className="w-6 h-12 border-2 border-white/40 rounded-full flex justify-center relative">
-                        <div className="w-1.5 h-4 bg-white/80 rounded-full mt-2 animate-bounce"></div>
-                    </div>
-                </div>
-            </div>
+
         </section>
     );
 }
 
-export default HeroSection;
+export default HeroSection

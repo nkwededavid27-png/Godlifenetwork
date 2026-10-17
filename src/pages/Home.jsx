@@ -1,11 +1,12 @@
 import HeroSection from "../components/HeroSection";
-import { Globe, Heart, HeartPulse, SquareArrowRightEnter } from 'lucide-react'
+import {  SquareArrowRightEnter } from 'lucide-react'
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import img1 from '../assets/img1.jpeg'
 import AOFPP from '../assets/AOFPP.jpg'
 import AOWF from '../assets/AOWF.jpg'
 import { NavLink } from "react-router-dom";
+import FloatingCard from "../components/FloatingCard";
 
 
 export default function Home() {
@@ -31,40 +32,13 @@ export default function Home() {
                     <span className="bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent">{t("welcomeDesc1")}</span>
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-20 pb-20">
-                    {/* Love */}
-                    <div className="text-center group">
-                        <div className="w-20 h-20 bg-red-900 rounded-3xl flex items-center justify-center mx-auto shadow-red-glow 
-                    transition-transform duration-300 lg:group-hover:scale-110">
-                            <Heart className="w-9 h-9 text-white" />
-                        </div>
-                        <h1 className="text-2xl font-black p-3">{t("loveTitle")}</h1>
-                        <p className="text-sm">{t("loveDesc")}</p>
-                    </div>
 
-                    {/* Life */}
-                    <div className="text-center group">
-                        <div className="w-20 h-20 bg-red-900 rounded-3xl flex items-center justify-center mx-auto shadow-red-glow 
-                    transition-transform duration-300 lg:group-hover:scale-110">
-                            <HeartPulse className="w-9 h-9 text-white" />
-                        </div>
-                        <h1 className="text-2xl font-black p-3">{t("lifeTitle")}</h1>
-                        <p className="text-sm">{t("lifeDesc")}</p>
-                    </div>
-
-                    {/* Impact */}
-                    <div className="text-center group">
-                        <div className="w-20 h-20 bg-red-900 rounded-3xl flex items-center justify-center mx-auto shadow-red-glow 
-                    transition-transform duration-300 lg:group-hover:scale-110">
-                            <Globe className="w-9 h-9 text-white" />
-                        </div>
-                        <h1 className="text-2xl font-black p-3">{t("impactTitle")}</h1>
-                        <p className="text-sm">{t("impactDesc")}</p>
-                    </div>
-                </div>
 
 
             </div>
+
+            <FloatingCard />
+
 
             <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4">
                 <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">

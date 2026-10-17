@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import FloatingCard from "../components/FloatingCard";
 
 export default function Event() {
     const { t, } = useTranslation();
@@ -52,7 +53,7 @@ export default function Event() {
                 </div>
             </section>
 
-
+            <FloatingCard />
 
             <div className="space-y-16 pt-20 p-10">
                 {/* Timeline Header */}
@@ -78,6 +79,8 @@ export default function Event() {
                             {t("timelineMonth")}
                         </h2>
                     </div>
+
+
 
                     {/* Event Cards Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pl-12 lg:pl-24">

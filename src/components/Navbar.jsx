@@ -200,7 +200,7 @@ function Navmenu() {
 
                             {/* Mobile Menu */}
                             <div
-                                className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out 
+                                className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out  
     ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"} 
     ${scrolled ? "bg-white text-black" : "bg-black text-white"}`}
                             >
@@ -246,16 +246,6 @@ function Navmenu() {
                                     </NavLink>
 
                                     <NavLink
-                                        to="/q"
-                                        onClick={() => setMenuOpen(false)}
-                                        className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
-                                        }
-                                    >
-                                        {t("contact")}
-                                    </NavLink>
-
-                                    <NavLink
                                         to="/m"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
@@ -263,6 +253,16 @@ function Navmenu() {
                                         }
                                     >
                                         {t("media")}
+                                    </NavLink>
+
+                                    <NavLink
+                                        to="/q"
+                                        onClick={() => setMenuOpen(false)}
+                                        className={({ isActive }) =>
+                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                        }
+                                    >
+                                        {t("contact")}
                                     </NavLink>
 
                                     <button

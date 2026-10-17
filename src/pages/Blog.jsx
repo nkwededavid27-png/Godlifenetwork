@@ -1,40 +1,9 @@
-import { useTranslation } from "react-i18next";
 
-// Example data arrays
-const categories = [
-    { name: "All", href: "", active: false },
-    { name: "Identity", href: "?category=identity", active: true },
-    { name: "Faith", href: "?category=faith", active: false },
-];
+import FloatingCard from "../components/FloatingCard";
 
-const articles = [
-    {
-        id: 1,
-        title: "LOVE. LIFE. IMPACT.",
-        description:
-            "How God's Love Sustains, Transforms, and Empowers Us to Influence the World",
-        category: "Identity",
-        date: "July 1, 2025",
-        author: "Dr. Flourish Peters",
-        href: "/blog/love-life-impact",
-        image:
-            "https://logicchurch-cms.s3.eu-west-2.amazonaws.com/medium_love_life_impact_7e005f638f.png",
-    },
-    {
-        id: 2,
-        title: "Faith in Action",
-        description: "Living out your faith daily with courage and love.",
-        category: "Faith",
-        date: "August 15, 2025",
-        author: "Jane Doe",
-        href: "/blog/faith-in-action",
-        image:
-            "https://via.placeholder.com/600x400.png?text=Faith+in+Action", // example placeholder
-    },
-];
 
 export default function BlogSection() {
-    const { t, } = useTranslation();
+
     return (
         <>
             <section className="relative h-screen overflow-hidden bg-black">
@@ -67,21 +36,12 @@ export default function BlogSection() {
                         </div>
 
                     </div>
-                    <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white z-10">
-                        <div className="flex flex-col items-center space-y-2">
-                            <span className="text-sm font-medium tracking-wider uppercase opacity-80">
-                                {t("Scroll")}
-                            </span>
-                            <div className="w-6 h-12 border-2 border-white/40 rounded-full flex justify-center relative">
-                                <div className="w-1.5 h-4 bg-white/80 rounded-full mt-2 animate-bounce"></div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
 
             </section>
 
-          
+            <FloatingCard />
         </>
     );
 }
