@@ -220,7 +220,7 @@ export default function Contact() {
                                     name="countryCode"
                                     value={formData.countryCode}
                                     onChange={handleChange}
-                                    className=" border p-2 rounded border-red-600 bg-white text-black w-28"
+                                    className=" border p-2 rounded border-red-600 bg-white text-black w-23"
                                 >
                                     <option value="+244">🇦🇴 Angola (+244)</option>
                                     <option value="+247">🇦🇨 Ascension Island (+247)</option>
@@ -302,7 +302,7 @@ export default function Contact() {
                                     placeholder="812 345 6789"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    className="flex-1 border p-2 rounded border-red-600 bg-white text-black"
+                                    className="flex-1 border w-29 p-2 rounded border-red-600 bg-white text-black"
                                 />
                             </div>
                             <input
