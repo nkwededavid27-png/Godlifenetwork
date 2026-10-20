@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 function HeroSection() {
     const { t, } = useTranslation();
     return (
-        <section className="relative h-150 sm:h-150 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
+        <section className="relative h-120 sm:h-120 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
