@@ -85,7 +85,7 @@ export default function Event() {
                     {/* Event Cards Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pl-12 lg:pl-24">
                         {/* Event Card 1 */}
-                        <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 w-full lg:w-full flex flex-col h-full shadow-lg shadow-[#ba1414]">
+                        <div className="group relative overflow-hidden  transition-all duration-300 flex flex-col h-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg  hover:bg-white/10  group w-full   shadow-lg shadow-[#e7e7e8] ">
                             <div className="h-2 w-full relative overflow-hidden bg-purple-500">
                                 <div className="absolute inset-0 opacity-50 group-hover:opacity-0 transition-opacity duration-300 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.4)_0px,rgba(255,255,255,0.4)_8px,transparent_8px,transparent_24px)]"></div>
                             </div>
@@ -97,26 +97,26 @@ export default function Event() {
                                     </div>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors leading-tight">
+                                    <h3 className="text-lg font-bold text-gray-50 mb-2 group-hover:text-primary-600 transition-colors leading-tight">
                                         {t("event1Title1")}
                                     </h3>
-                                    <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-gray-500 mb-4">
+                                    <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-gray-50 mb-4">
                                         <div className="flex items-center font-medium">
-                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-50" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <polyline points="12 6 12 12 16 14"></polyline>
                                             </svg>
                                             {t("event1DateTime")}
                                         </div>
                                         <div className="flex items-center font-medium">
-                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-50" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg>
                                             {t("event1Location")}
                                         </div>
                                     </div>
-                                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-6 cursor-help">
+                                    <p className="text-gray-50 text-sm leading-relaxed line-clamp-2 mb-6 cursor-help">
                                         {t("event1Description")}
                                     </p>
                                 </div>
@@ -139,7 +139,7 @@ export default function Event() {
                             </div>
                         </div>
 
-                        <div className="group relative bg-white rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 flex flex-col h-full shadow-lg shadow-[#ba1414]">
+                        <div className="group relative overflow-hidden  transition-all duration-300 flex flex-col h-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg  hover:bg-white/10  group w-full   shadow-lg shadow-[#e7e7e8] ">
                             <div className="h-2 w-full relative overflow-hidden bg-green-500">
                                 <div className="absolute inset-0 opacity-50 group-hover:opacity-0 transition-opacity duration-300 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.4)_0px,rgba(255,255,255,0.4)_8px,transparent_8px,transparent_24px)]"></div>
                             </div>
@@ -153,32 +153,32 @@ export default function Event() {
                                 </div>
 
                                 <div className="flex-1">
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors leading-tight">
+                                    <h3 className="text-lg font-bold text-gray-50 mb-2 group-hover:text-primary-600 transition-colors leading-tight">
                                         {t("event2Title1")}
                                     </h3>
-                                    <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-gray-500 mb-4">
+                                    <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-gray-50 mb-4">
                                         <div className="flex items-center font-medium">
-                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-50" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                                 <circle cx="12" cy="12" r="10"></circle>
                                                 <polyline points="12 6 12 12 16 14"></polyline>
                                             </svg>
                                             {t("event2DateTime")}
                                         </div>
                                         <div className="flex items-center font-medium">
-                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                            <svg className="w-3.5 h-3.5 mr-1.5 text-gray-50" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg>
                                             {t("event2Location")}
                                         </div>
                                     </div>
-                                    <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-6 cursor-help">
+                                    <p className="text-gray-50 text-sm leading-relaxed line-clamp-2 mb-6 cursor-help">
                                         {t("event2Description")}
                                     </p>
                                 </div>
 
                                 <div className="flex items-center justify-between pt-5 border-t border-gray-50 mt-auto">
-                                    <button className="flex items-center text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors py-2" title="Add to Calendar">
+                                    <button className="flex items-center text-xs font-medium text-gray-50 hover:text-gray-900 transition-colors py-2" title="Add to Calendar">
                                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                             <path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"></path>
                                             <line x1="16" x2="16" y1="2" y2="6"></line>

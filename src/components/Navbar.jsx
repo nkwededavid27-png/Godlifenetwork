@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Godlifelogo from "../assets/Godlife-logo.png";
 import Godlifelogo2 from "../assets/godlife-logo2.png";
 import { useTranslation } from "react-i18next";
+import { Menu, X } from "lucide-react";
 
 
 function Navmenu() {
@@ -45,14 +46,29 @@ function Navmenu() {
                     }`}
             >
                 <div className="container-max">
-                    <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10">
+                    <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10 ">
+
+                        <button
+                            className={`lg:hidden transition-all duration-300 ${scrolled ? "text-black" : "text-white"}`}
+                            aria-label="Toggle navigation"
+                            onClick={() => setMenuOpen(!menuOpen)}
+                        >
+                            {menuOpen ? (
+                                <X />
+                            ) : (
+                                <Menu className="h-8 w-8" />
+                            )}
+                        </button>
+
+
                         {/* Logo */}
-                        <NavLink to="/">
+                        <NavLink to="/"
+                            className="ml-auto lg:mr-auto lg:ml-0">
                             <img
                                 alt="Godlife Network- Alter of Worship"
                                 width={scrolled ? 70 : 110}
                                 height={40}
-                                className="object-contain transition-all duration-300 ease-in-out border-4 border-red-600 rounded-2xl"
+                                className="object-contain  object-right transition-all duration-300 ease-in-out border-4 border-red-600 rounded-2xl"
                                 src={scrolled ? Godlifelogo2 : Godlifelogo}
                             />
                         </NavLink>
@@ -77,7 +93,6 @@ function Navmenu() {
                                     {t("home")}
                                 </NavLink>
 
-
                                 <NavLink
                                     to="/About"
                                     onClick={() => setOpen(false)}
@@ -93,7 +108,6 @@ function Navmenu() {
                                 >
                                     {t("about")}
                                 </NavLink>
-
 
                                 <NavLink
                                     to="/Event"
@@ -111,7 +125,6 @@ function Navmenu() {
                                     {t("event")}
                                 </NavLink>
 
-
                                 <NavLink
                                     to="/Blog"
                                     onClick={() => setOpen(false)}
@@ -128,8 +141,9 @@ function Navmenu() {
                                     {t("blog")}
                                 </NavLink>
 
+                                
                                 <NavLink
-                                    to="/m"
+                                    to="/d"
                                     onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
@@ -144,6 +158,7 @@ function Navmenu() {
                                     {t("media")}
                                 </NavLink>
 
+                                
                                 <NavLink
                                     to="/Contact"
                                     onClick={() => setOpen(false)}
@@ -159,6 +174,7 @@ function Navmenu() {
                                 >
                                     {t("contact")}
                                 </NavLink>
+
 
                                 <button
                                     onClick={toggleLanguage}
@@ -177,39 +193,34 @@ function Navmenu() {
                             </div>
 
                             {/* Mobile Menu Button */}
-                            <button
-                                className={`lg:hidden navbar-end transition-all duration-300 
-              ${scrolled ? "text-black" : "text-white"}`}
-                                aria-label="Toggle navigation"
-                                onClick={() => setMenuOpen(!menuOpen)}
-                            >
-                                {menuOpen ? (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <line x1="18" y1="6" x2="6" y2="18" />
-                                        <line x1="6" y1="6" x2="18" y2="18" />
-                                    </svg>
-                                ) : (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <line x1="4" y1="6" x2="20" y2="6" />
-                                        <line x1="4" y1="12" x2="20" y2="12" />
-                                        <line x1="4" y1="18" x2="20" y2="18" />
-                                    </svg>
-                                )}
-                            </button>
+
 
 
                             {/* Mobile Menu */}
+                            {menuOpen && (
+                                <div
+                                    className="fixed inset-0 lg:hidden"
+                                    onClick={() => setMenuOpen(false)}
+                                />
+                            )}
                             <div
-                                className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out  
-    ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"} 
-    ${scrolled ? "bg-white text-black" : "bg-black text-white"}`}
+                               className={`lg:hidden fixed top-0 left-0 h-screen w-1/2 transform transition-all duration-500 ease-in-out
+                                    ${menuOpen ? "translate-x-0 opacity-100 scale-100" : "-translate-x-full opacity-0 scale-95"} 
+                                    ${scrolled ? "bg-white text-black" : "bg-black text-white"}`}
                             >
+                                <img
+                                    alt="Godlife Network- Alter of Worship"
+                                    width={scrolled ? 70 : 70}
+                                    height={40}
+                                    className="object-contain m-auto mt-5 transition-all duration-300 ease-in-out border-4 border-red-600 rounded-2xl"
+                                    src={scrolled ? Godlifelogo2 : Godlifelogo}
+                                />
                                 <div className="flex flex-col items-start p-4 space-y-2 overflow-y-auto">
                                     <NavLink
                                         to="/"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                            isActive ? "font-bold m-auto text-red-600" : "font-bold m-auto"
                                         }
                                     >
                                         {t("home")}
@@ -219,7 +230,7 @@ function Navmenu() {
                                         to="/About"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                            isActive ? "font-bold m-auto mt-5 text-red-600" : "font-bold mt-5 m-auto"
                                         }
                                     >
                                         {t("about")}
@@ -229,7 +240,7 @@ function Navmenu() {
                                         to="/Event"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                            isActive ? "font-bold mt-5 m-auto text-red-600" : "font-bold mt-5 m-auto"
                                         }
                                     >
                                         {t("event")}
@@ -239,7 +250,7 @@ function Navmenu() {
                                         to="/Blog"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                            isActive ? "font-bold mt-5 m-auto text-red-600" : "font-bold mt-5 m-auto"
                                         }
                                     >
                                         {t("blog")}
@@ -249,17 +260,17 @@ function Navmenu() {
                                         to="/m"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                            isActive ? "font-bold mt-5 m-auto text-red-600" : "font-bold mt-5 m-auto"
                                         }
                                     >
                                         {t("media")}
                                     </NavLink>
 
                                     <NavLink
-                                        to="/q"
+                                        to="/Contact"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
-                                            isActive ? "font-bold text-red-600" : "font-bold"
+                                            isActive ? "font-bold mt-5 m-auto text-red-600" : "font-bold mt-5 m-auto"
                                         }
                                     >
                                         {t("contact")}
@@ -267,7 +278,7 @@ function Navmenu() {
 
                                     <button
                                         onClick={toggleLanguage}
-                                        className={`relative inline-flex items-center h-6 w-12 rounded-full transition-colors ${scrolled ? "bg-gray-300" : "bg-white/30"
+                                        className={`relative inline-flex items-center m-auto h-6 w-12 mt-5 rounded-full transition-colors ${scrolled ? "bg-gray-300" : "bg-white/30"
                                             }`}
                                     >
                                         <span
@@ -277,6 +288,8 @@ function Navmenu() {
                                         <span className="absolute left-1 text-xs font-bold text-black">EN</span>
                                         <span className="absolute right-1 text-xs font-bold text-black">FR</span>
                                     </button>
+
+
                                 </div>
                             </div>
 
@@ -284,7 +297,7 @@ function Navmenu() {
                         </nav>
                     </div>
                 </div >
-            </header >
+            </header>
         </>
     );
 }

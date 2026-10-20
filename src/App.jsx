@@ -7,6 +7,7 @@ import Event from './pages/Event';
 import ScrollToTop from './components/ScrollToTop';
 import Blog from './pages/Blog';
 import FloatingCard from './components/FloatingCard';
+import Contact from './pages/Contact'
 
 
 
@@ -26,7 +27,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Event" element={<Event />} />
           <Route path="/Blog" element={<Blog />} />
-          
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </main>
     </>

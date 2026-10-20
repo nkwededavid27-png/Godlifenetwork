@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 function HeroSection() {
     const { t, } = useTranslation();
     return (
-        <section className="relative h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
+        <section className="relative h-150 sm:h-150 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
@@ -50,15 +50,13 @@ function HeroSection() {
                                     {t("heroTitle1")}
                                 </h1>
 
-                                <p className="text-xl sm:text-2xl text-white/90 mb-10 slide-up-delay">
-                                    {t("heroSubtitle1")}
-                                </p>
+
                                 <div className="flex justify-center gap-4 slide-up-delay2">
-                                    <NavLink to='/Blog'>
+                                    <a>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                            {t("joinButton1")}
+                                            {t("joinButton2")}
                                         </button>
-                                    </NavLink>
+                                    </a>
                                 </div>
                             </div>
 
@@ -82,14 +80,13 @@ function HeroSection() {
                                     bg-clip-text text-transparent uppercase slide-up">
                                     {t("heroTitle2")}
                                 </h1>
-                                <p className="text-xl sm:text-2xl text-white/90 mb-10 slide-up-delay">
-                                    {t("heroSubtitle2")}
-                                </p>
-                                <div className="flex justify-center gap-4 slide-up-delay2">
-                                    <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                        {t("joinButton2")}
-                                    </button>
 
+                                <div className="flex justify-center gap-4 slide-up-delay2">
+                                    <a href="#">
+                                        <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
+                                            {t("joinButton2")}
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -112,9 +109,7 @@ function HeroSection() {
                                     bg-clip-text text-transparent uppercase slide-up">
                                     {t("heroTitle3")}
                                 </h1>
-                                <p className="text-xl sm:text-2xl text-white/90 mb-10 slide-up-delay">
-                                    {t("heroSubtitle3")}
-                                </p>
+
                                 <div className="flex justify-center gap-4 slide-up-delay2">
                                     <NavLink to='/Event'>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">

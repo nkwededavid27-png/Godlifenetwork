@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import {  SquareArrowRightEnter } from 'lucide-react'
+import { SquareArrowRightEnter } from 'lucide-react'
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import img1 from '../assets/img1.jpeg'
@@ -32,27 +32,75 @@ export default function Home() {
                     <span className="bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent">{t("welcomeDesc1")}</span>
                 </p>
 
-
-
-
             </div>
 
-            
+            <div className="text-center p-5 bg-white rounded-3xl shadow-lg shadow-red-600 lg:m-4 m-3">
+                <h1 className="text-black uppercase p-3 lg:p-15 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black ">{t("Dhomologeo")}</h1>
+                <p className="sm:hidden md:hidden lg:hidden text-lg p-4 text-gray-600 ">{t("slideRight")}</p>
+                {/**Laptop homologeo */}
+                <div className="hidden lg:grid sm:grid sm:grid-cols-1 md:grid md:grid-cols-1 lg:grid-cols-2 p-5 gap-5">
+                    <div>
+                        <img
+                            className="w-ful shadow-lg shadow-red-600 from-red-400 via-yellow-400 "
+                            src="https://scontent.fcoo2-2.fna.fbcdn.net/v/t39.30808-6/817329473_122304146540203666_9210632606273483348_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHjvUZGMX-xaKlxVW-VBth3L9zJF_M86yYv3MkX8zzrJvlWGQ5N45lieljRaWnNpS_HkNG5w-kJxXe4ppq6GHFh&_nc_ohc=j0ky683Oi1gQ7kNvwGfBH6m&_nc_oc=AdqjhR3XB4BqgPTYo8qU2eJAxzy_qFbEh7zcxJ243WYq_3S_tMqWoApa7qEjbVtNZlc&_nc_zt=23&_nc_ht=scontent.fcoo2-2.fna&_nc_gid=ODocZ99iZa6yw6Y_R8HX8A&_nc_ss=7b2a8&oh=00_AQNBb9AL8k5wolnZfa7yL8NHD28QQMFnzHpQzIT1DaG7EQ&oe=6AD88FDA" alt="homologeo image" />
+                    </div>
 
+                    <div>
+                        <img
+                            className="w-ful shadow-lg shadow-red-600 from-red-400 via-yellow-400 "
+                            src="https://scontent.fcoo2-1.fna.fbcdn.net/v/t39.30808-6/816394331_122304146624203666_4345671479326021329_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEF3RfPpjewIV0kb93l_LPdPVY7SvE6Els9VjtK8ToSW918jqKD0L9qUUJQyyCsykaHA5tq_YSV1xHxC3n26RJA&_nc_ohc=kMp4H26G4_wQ7kNvwGuBmBu&_nc_oc=AdqTTaRtvcVVptvwZqYRdzQOV1JItr9noS6mCt3qiSps6zDCtwq_qlHFoUz0Yn1UeNQ&_nc_zt=23&_nc_ht=scontent.fcoo2-1.fna&_nc_gid=EWbc3fmmVHxp-uhZ02UtKA&_nc_ss=7b2a8&oh=00_AQNzUVuwh9HBNAtbuy6xrZJeIgmgdN4JHo5QZysReys0FA&oe=6AD89B90" alt="homologeo image" />
+                    </div>
+                </div>
 
-            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4">
+                {/**mobile homologeo */}
+
+                <div className="pt-5 lg:hidden carousel rounded-box w-full shadow-lg h-100 shadow-red-600 from-red-400 via-yellow-400">
+                    <div className="carousel-item w-full">
+                        <img
+                            src="https://scontent.fcoo2-2.fna.fbcdn.net/v/t39.30808-6/817329473_122304146540203666_9210632606273483348_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHjvUZGMX-xaKlxVW-VBth3L9zJF_M86yYv3MkX8zzrJvlWGQ5N45lieljRaWnNpS_HkNG5w-kJxXe4ppq6GHFh&_nc_ohc=j0ky683Oi1gQ7kNvwGfBH6m&_nc_oc=AdqjhR3XB4BqgPTYo8qU2eJAxzy_qFbEh7zcxJ243WYq_3S_tMqWoApa7qEjbVtNZlc&_nc_zt=23&_nc_ht=scontent.fcoo2-2.fna&_nc_gid=ODocZ99iZa6yw6Y_R8HX8A&_nc_ss=7b2a8&oh=00_AQNBb9AL8k5wolnZfa7yL8NHD28QQMFnzHpQzIT1DaG7EQ&oe=6AD88FDA"
+                            className="w-full"
+                            alt="Tailwind CSS Carousel component" />
+                    </div>
+                    <div className="carousel-item w-full">
+                        <img
+                            src="https://scontent.fcoo2-1.fna.fbcdn.net/v/t39.30808-6/816394331_122304146624203666_4345671479326021329_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEF3RfPpjewIV0kb93l_LPdPVY7SvE6Els9VjtK8ToSW918jqKD0L9qUUJQyyCsykaHA5tq_YSV1xHxC3n26RJA&_nc_ohc=kMp4H26G4_wQ7kNvwGuBmBu&_nc_oc=AdqTTaRtvcVVptvwZqYRdzQOV1JItr9noS6mCt3qiSps6zDCtwq_qlHFoUz0Yn1UeNQ&_nc_zt=23&_nc_ht=scontent.fcoo2-1.fna&_nc_gid=EWbc3fmmVHxp-uhZ02UtKA&_nc_ss=7b2a8&oh=00_AQNzUVuwh9HBNAtbuy6xrZJeIgmgdN4JHo5QZysReys0FA&oe=6AD89B90"
+                            className="w-full"
+                            alt="Tailwind CSS Carousel component" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pt-30 pb-50">
+                <div className="text-center">
+                    <h1 className="lg:text-left text-5xl lg:text-5xl font-bold bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent pb-4  pt-10 lg:pl-10">
+                        {t("aboutTitle")}
+                    </h1>
+
+                    <p className="font-black m-7 text-xl">{t("homeabout")}</p>
+                </div>
+                <div className="flex items-center justify-center pt-10 lg:pt-0">
+                    <NavLink
+                        to="/About"
+                        className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
+                    >
+                        {t("aboutBtn")} <SquareArrowRightEnter className="ml-3" />
+                    </NavLink>
+                </div>
+            </div>
+
+            <div className="text-center pt-20 p-5 lg:p-10 bg-[#ffffff] rounded-3xl shadow-lg shadow-red-600 lg:m-4">
                 <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">
                     {t("prevEventsTitle")}
                 </div>
 
 
-                <p className="text-lg lg:text-xl text-center text-black pt-10">
+                <p className="text-lg lg:text-xl text-center text-gray-500 pt-10">
                     {t("prevEventsDesc")}
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-20 pb-20">
 
-                    <div className="card bg-base-100 w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
                             <img src={img1} alt="Events" className="rounded-xl" />
@@ -66,7 +114,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="card bg-[#070606] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
                             <img src={AOWF} alt="Events" className="rounded-xl" />
@@ -80,7 +128,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
                         <figure className="px-10 pt-10">
                             <img src={AOFPP} alt="Events" className="rounded-xl" />
@@ -99,25 +147,55 @@ export default function Home() {
 
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 pt-30 pb-50">
-                <div className="text-center">
-                    <h1 className="lg:text-left text-5xl lg:text-5xl font-bold bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent pb-4  pt-10 lg:pl-10">
-                        {t("aboutTitle")}
-                    </h1>
+            <div className="text-center mb-16 pt-20">
+                {/* Tagline */}
+                <div className="mb-6">
+                    <span className="inline-block px-6 py-3 bg-red-200 text-center text-red-600 font-semibold rounded-full text-sm tracking-wide">
+                        {t("homologeoTagline")}
+                    </span>
+                </div>
 
-                    <p className="font-black m-7">{t("aboutDesc")}</p>
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:p-10 pt-20">
+                    <div>
+                        <img
+                            className=" w-85 sm:w-130 md:w-150 lg:w-270 h-150 object-cover border border-red-600 shadow-lg shadow-red-600 rounded-lg m-auto"
+                            src="https://i.pinimg.com/1200x/8a/e9/06/8ae906e3c778b493bd6c0253fbcacc38.jpg" alt="Homologeo section" />
+                    </div>
+
+                    <div>
+                        {/* Heading */}
+                        <h2 className="text-4xl sm:text-5xl font-display font-bold text-dark mb-6 tracking-tight">
+                            {t("homologeoTitle")}
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12 p-5">
+                            {t("homologeoDesc")}
+                        </p>
+
+
+
+                        <div className="flex items-center justify-center pt-10 lg:pt-0">
+                            <NavLink
+                                to="/About#homologeo-section"
+                                className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
+                            >
+                                {t("homologeoBtn")} <SquareArrowRightEnter className="ml-3" />
+                            </NavLink>
+                        </div>
+
+                        <div>
+                            <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
+                                <a href="">{t("followFacebookBtn")}</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex items-center justify-center pt-10 lg:pt-0">
-                    <NavLink
-                        to="/About"
-                        className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
-                    >
-                        {t("aboutBtn")} <SquareArrowRightEnter className="ml-3" />
-                    </NavLink>
-                </div>
+
+
             </div>
 
-            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4 ">
+            <div className="text-center pt-20 p-5 lg:p-10 bg-[#f5f3f3] rounded-3xl shadow-lg shadow-red-600 lg:m-4 mb-5">
                 <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">
                     {t("upcomingEventsTitle")}
                 </div>
@@ -193,55 +271,9 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="text-center mb-16 pt-20">
-                {/* Tagline */}
-                <div className="mb-6">
-                    <span className="inline-block px-6 py-3 bg-red-200 text-center text-red-600 font-semibold rounded-full text-sm tracking-wide">
-                        {t("homologeoTagline")}
-                    </span>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:p-10 pt-20">
-                    <div>
-                        <img
-                            className=" w-85 sm:w-130 md:w-150 lg:w-270 h-150 object-cover border border-red-600 shadow-lg shadow-red-600 rounded-lg m-auto"
-                            src="https://i.pinimg.com/1200x/8a/e9/06/8ae906e3c778b493bd6c0253fbcacc38.jpg" alt="Homologeo section" />
-                    </div>
-
-                    <div>
-                        {/* Heading */}
-                        <h2 className="text-4xl sm:text-5xl font-display font-bold text-dark mb-6 tracking-tight">
-                            {t("homologeoTitle")}
-                        </h2>
-
-                        {/* Description */}
-                        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
-                            {t("homologeoDesc")}
-                        </p>
 
 
-
-                        <div className="flex items-center justify-center pt-10 lg:pt-0">
-                            <NavLink
-                                to="/About"
-                                className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
-                            >
-                                {t("homologeoBtn")} <SquareArrowRightEnter className="ml-3" />
-                            </NavLink>
-                        </div>
-
-                        <div>
-                            <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
-                                <a href="">{t("followFacebookBtn")}</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div className="text-center mb-0 pt-20 bg-[#f5f3f3] rounded-3xl">
+            <div className="text-center mb-0 pt-20 bg-[#000000] rounded-3xl">
                 {/* Tagline */}
                 <div className="mb-6">
                     <span className="inline-block px-6 py-3 bg-red-200 text-center text-red-600 font-semibold rounded-full text-sm tracking-wide">
@@ -250,7 +282,7 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:p-10 pt-20">
-                    
+
 
                     <div>
                         {/* Heading */}
@@ -259,7 +291,7 @@ export default function Home() {
                         </h2>
 
                         {/* Description */}
-                        <p className="text-xl text-black max-w-2xl mx-auto  mb-12 p-5">
+                        <p className="text-xl text-white max-w-2xl mx-auto  mb-12 p-5">
                             {t("contactDesc")}
                         </p>
 
@@ -267,7 +299,7 @@ export default function Home() {
 
                         <div className="flex items-center justify-center pt-10 lg:pt-0">
                             <NavLink
-                                to="/"
+                                to="/Contact"
                                 className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
                             >
                                 {t("contactBtn")} <SquareArrowRightEnter className="ml-3" />
@@ -275,7 +307,7 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-black hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
+                            <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
                                 <a href="">{t("followFacebookBtn")}</a>
                             </button>
                         </div>

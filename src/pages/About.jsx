@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import pastorimg from '../assets/pastorimg.png'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import aboutsideimg from '../assets/about-side-img.jpg'
 
 
 
@@ -10,7 +11,7 @@ export default function About() {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <section className="relative h-screen overflow-hidden bg-black">
+            <section className="relative h-150 sm:h-150 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600">
                 <div className="absolute inset-0">
                     <img
                         alt="Banner 2"
@@ -27,9 +28,7 @@ export default function About() {
                                 {t("aboutHeroTitle")}
                             </h1>
 
-                            <p className="text-xl sm:text-2xl text-white/90 mb-10 ">
-                                {t("aboutHeroSubtitle")}
-                            </p>
+
                             <div className="flex justify-center gap-4 ">
                                 <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                     {t("aboutHeroButton")}
@@ -39,12 +38,12 @@ export default function About() {
                         </div>
 
                     </div>
-                    
+
                 </div>
 
             </section>
 
-            
+
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-10 pt-20">
                 {/* Left Column - Text */}
@@ -127,17 +126,17 @@ export default function About() {
                 {/* Right Column - Image */}
                 <div className="relative h-150 overflow-hidden">
                     <img
-                        src="https://scontent.fcoo1-2.fna.fbcdn.net/v/t39.30808-6/828480955_122305963214203666_5455756936612491227_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeERCQwGuFOwBC-rwUSSfSMHQb3EiQu3VlBBvcSJC7dWUBOJElu4UT37-Vm1Su2JhMT1qD41kroiuf5xkWl8Psjb&_nc_ohc=XaVmh0p5FCAQ7kNvwGrD0KC&_nc_oc=Adpqi0VAveBPLUK4ibigbnRIFc04Si3Pey_ueq3i4Ks7p1Sy21VgnO87wjx5_CTWhKw&_nc_zt=23&_nc_ht=scontent.fcoo1-2.fna&_nc_gid=IlDq2zNAjbgt4fjnLO7XNg&_nc_ss=7a2a8&oh=00_AQOSl_t4Ghx8886sxYdfpUjeJW4FXCgUWtU10D_Qya3jsA&oe=6AD31A76" // replace with your actual image path
+                        src={aboutsideimg}
                         alt="The GLN community gathering for worship and fellowship"
                         className="object-cover absolute inset-0 w-full h-full  border-red-600 shadow-xl shadow-red-600 rounded-2xl m-auto"
                     />
                 </div>
             </div>
 
-            <div className="container-max bg-[#f8e7e7] p-10">
+            <div className="container-max bg-[#f8e7e7] p-5">
                 {/* Section Heading */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-display font-bold text-black pt-10 mb-4">
+                    <h2 className="text-4xl font-display font-bold text-black pt-10 mb-4">
                         {t("missionVisionTitle")}
                     </h2>
                 </div>
@@ -146,6 +145,15 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 pb-20 gap-8">
                     {/* Mission */}
                     <div className="bg-white p-8 shadow-lg rounded-lg">
+                        <img
+                            src="https://i.pinimg.com/1200x/4b/7a/91/4b7a910939f7bcb69b067bea6eac666e.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 92% 8% / 40% 68% 32% 60% "
+                            }}
+                        />
+                        
                         <h3 className="text-2xl font-display font-semibold text-primary mb-4">
                             {t("missionTitle")}
                         </h3>
@@ -156,13 +164,141 @@ export default function About() {
 
                     {/* Vision */}
                     <div className="bg-white p-8 shadow-lg rounded-lg">
-                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
+                        <img
+                            src="https://i.pinimg.com/1200x/b1/87/25/b187253f61a5f02df0e46c8e89887ba9.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 7% 93% / 62% 45% 55% 38% "
+                            }}
+                        />
+
+                        <h3 className="text-2xl font-display font-semibold text-right text-primary mb-4">
                             {t("visionTitle")}
                         </h3>
-                        <p className="text-gray-600 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed text-right">
                             {t("visionText")}
                         </p>
                     </div>
+                </div>
+            </div>
+
+
+
+
+            <div className="container-max bg-[#f8e7e7] p-5">
+                {/* Section Heading */}
+                <div className="text-center mb-12">
+                    <h2 className="text-4xl font-display font-bold text-black pt-10 mb-4">
+                        {t("coreValuesTitle")}
+                    </h2>
+                </div>
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 pb-20 gap-8">
+                    {/* Mission */}
+                    <div className="bg-white p-8 shadow-lg rounded-lg">
+                        <img
+                            src="https://i.pinimg.com/1200x/ce/67/1f/ce671f1a983d36caea246324e250f843.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 92% 8% / 40% 68% 32% 60% "
+                            }}
+                        />
+
+                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
+                            {t("loveTitle")}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed">
+                            {t("loveText")}
+                        </p>
+                    </div>
+
+                    {/* Vision */}
+                    <div className="bg-white p-8 shadow-lg rounded-lg">
+                        <img
+                            src="https://i.pinimg.com/1200x/8b/16/5b/8b165ba7964b8d781192d428565281ea.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 7% 93% / 62% 45% 55% 38% "
+                            }}
+                        />
+
+                        <h3 className="text-2xl font-display font-semibold text-right text-primary mb-4">
+                            {t("honourTitle")}
+                        </h3>
+                        <p className="text-gray-600 text-right leading-relaxed">
+                            {t("honourText")}
+                        </p>
+                    </div>
+
+                    {/* Vision */}
+                    <div className="bg-white p-8 shadow-lg rounded-lg">
+                        <img
+                            src="https://i.pinimg.com/736x/d2/c0/3d/d2c03d2a181f7990f7d74673f59cf20f.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 92% 8% / 40% 68% 32% 60% "
+                            }}
+                        />
+
+                        <h3 className="text-2xl font-display font-semibold  text-primary mb-4">
+                            {t("excellenceTitle")}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed">
+                            {t("excellenceText")}
+                        </p>
+                    </div>
+
+                    {/* Vision */}
+                    <div className="bg-white p-8 shadow-lg rounded-lg">
+                        <img
+                            src="https://i.pinimg.com/1200x/6c/a5/16/6ca516671457942801da2af8db10fb70.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 7% 93% / 62% 45% 55% 38% "
+                            }}
+                        />
+
+                        <h3 className="text-2xl font-display font-semibold text-right text-primary mb-4">
+                            {t("spiritualityTitle")}
+                        </h3>
+                        <p className="text-gray-600 text-right leading-relaxed">
+                            {t("spiritualityText")}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="homologeo-section" className="container-max  p-5 lg:p-10">
+                {/* Section Heading */}
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-display font-bold text-white pt-10 mb-4">
+                        {t("homologeoTitle1")}
+                    </h2>
+                </div>
+
+                {/* Grid */}
+                <div className="flex justify-center pb-10 ">
+                    {/* Mission */}
+                    <div className="bg-white p-8 shadow-lg rounded-lg  border-red-600  shadow-red-600 ">
+
+                        {t("homologeoDeclarations", { returnObjects: true }).map((line, index) => (
+                            <p
+                                key={index}
+                                className="text-black font-serif leading-relaxed text-lg md:text-xl font-display font-semibold mb-1"
+                            >
+                                {line}
+                            </p>
+                        ))}
+
+                    </div>
+
+
                 </div>
             </div>
 
@@ -183,94 +319,11 @@ export default function About() {
 
                     <div className="">
                         <h1 className="text-4xl lg:text-5xl text-center text-white font-serif">{t("leaderName")}</h1>
-                        <p className="text-red-600 text-xl lg:text-2xl pt-3">{t("leaderRole")}</p>
+
                     </div>
                 </div>
             </div>
 
-
-            <div className="container-max bg-[#f8e7e7] p-10">
-                {/* Section Heading */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-display font-bold text-black pt-10 mb-4">
-                        {t("coreValuesTitle")}
-                    </h2>
-                </div>
-
-                {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 pb-20 gap-8">
-                    {/* Mission */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg">
-                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
-                            {t("loveTitle")}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            {t("loveText")}
-                        </p>
-                    </div>
-
-                    {/* Vision */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg">
-                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
-                            {t("honourTitle")}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            {t("honourText")}
-                        </p>
-                    </div>
-
-                    {/* Vision */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg">
-                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
-                            {t("excellenceTitle")}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            {t("excellenceText")}
-                        </p>
-                    </div>
-
-                    {/* Vision */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg">
-                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
-                            {t("spiritualityTitle")}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            {t("spiritualityText")}
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-max  p-5 lg:p-10">
-                {/* Section Heading */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-display font-bold text-white pt-10 mb-4">
-                        {t("homologeoTitle1")}
-                    </h2>
-                </div>
-
-                {/* Grid */}
-                <div className="flex justify-center pb-10 ">
-                    {/* Mission */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg  border-red-600  shadow-red-600 ">
-
-                        {t("homologeoDeclarations", { returnObjects: true }).map((line, index) => (
-                            <p
-                                key={index}
-                                className="text-black font-serif leading-relaxed text-lg md:text-xl font-display font-semibold mb-1"
-                            >
-                                <span className="text-2xl md:text-2xl mr-2 text-red-600">
-                                    {index + 1}.
-                                </span>
-                                {line}
-                            </p>
-                        ))}
-
-                    </div>
-
-
-                </div>
-            </div>
 
             <section className="section-padding bg-gray-50 p-4">
                 <div className="container-max text-center">
