@@ -49,29 +49,17 @@ export default function BlogSection() {
                     {/* Category Filter */}
                     <div className="space-y-4">
                         <div className="flex items-center justify-between flex-wrap gap-4">
-                            <h3 className="text-xl font-semibold text-gray-900">
-                                Browse by Category
-                            </h3>
-                            <NavLink
-                                to="/blog"
-                                className="text-sm text-primary-600 hover:text-primary-700 font-medium"
-                            >
-                                Clear filters
-                            </NavLink>
+                            
+                            
                         </div>
                         <div className="flex flex-wrap gap-3">
                             <NavLink
-                                to=""
+                                to="/blog"
                                 className="px-4 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
                             >
                                 All
                             </NavLink>
-                            <NavLink
-                                to="?category=identity"
-                                className="px-4 py-2 rounded-full text-sm font-medium transition-colors bg-primary-600 text-white shadow-lg"
-                            >
-                                Identity
-                            </NavLink>
+                            
                         </div>
                     </div>
 
@@ -88,7 +76,7 @@ export default function BlogSection() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {/* Article Card */}
-                            <div className="bg-black backdrop-blur-sm border border-white/10 rounded-lg group w-full shadow-lg shadow-[#e7e7e8]">
+                            <div className="bg-black backdrop-blur-sm border border-white/10 rounded-lg group w-85 md:w-100 lg:w-120 m-auto shadow-lg shadow-[#e7e7e8]">
                                 <NavLink to="/blog/perfect-love">
                                     <div className="card-elegant overflow-hidden cursor-pointer h-full group">
                                         {/* Cover Image */}
