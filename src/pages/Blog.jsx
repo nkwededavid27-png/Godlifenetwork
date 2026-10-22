@@ -67,7 +67,7 @@ export default function BlogSection() {
                     <div>
                         <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
                             <h3 className="text-xl font-semibold text-gray-900">
-                                Articles in love
+                                Articles from Ifeanyi Ewim
                             </h3>
                             <p className="text-sm uppercase tracking-wide text-gray-400">
                                 Page 1 of 1
