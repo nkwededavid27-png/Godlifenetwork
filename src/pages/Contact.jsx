@@ -146,9 +146,9 @@ export default function Contact() {
                         </div>
 
                         <div className="text-center flex justify-center gap-5 mt-5">
-                            <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
+                            <div className="lg:w-30 w-15 h-px bg-gray-400 m-auto"></div>
                             <h4 className="text-xl font-bold text-red-600 mb-2">Follow Us</h4>
-                            <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
+                            <div className="lg:w-30 w-15 h-px bg-gray-400 m-auto"></div>
                         </div>
 
                         <div className="grid grid-cols-3 space-x-4 m-auto">
