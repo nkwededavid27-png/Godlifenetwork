@@ -67,7 +67,7 @@ export default function BlogSection() {
                     <div>
                         <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
                             <h3 className="text-xl font-semibold text-gray-900">
-                                Articles from Ifeanyi Ewim
+                                Articles by Ifeanyi Ewim
                             </h3>
                             <p className="text-sm uppercase tracking-wide text-gray-400">
                                 Page 1 of 1
@@ -76,7 +76,7 @@ export default function BlogSection() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {/* Article Card */}
-                            <div className="bg-black backdrop-blur-sm border border-white/10 rounded-lg group w-85 md:w-100 lg:w-120 m-auto shadow-lg shadow-[#e7e7e8]">
+                            <div className="bg-black backdrop-blur-sm border border-white/10 rounded-lg group w-full md:w-100 lg:w-120 m-auto shadow-lg shadow-[#e7e7e8]">
                                 <NavLink to="/blog/perfect-love">
                                     <div className="card-elegant overflow-hidden cursor-pointer h-full group">
                                         {/* Cover Image */}
