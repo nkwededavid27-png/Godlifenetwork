@@ -146,9 +146,9 @@ export default function Contact() {
                         </div>
 
                         <div className="text-center flex justify-center gap-5 mt-5">
-                            <div className="lg:w-30 w-10 h-px bg-gray-400 m-auto"></div>
+                            <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
                             <h4 className="text-xl font-bold text-red-600 mb-2">Follow Us</h4>
-                            <div className="lg:w-30 w-10 h-px bg-gray-400 m-auto"></div>
+                            <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
                         </div>
 
                         <div className="grid grid-cols-3 space-x-4 m-auto">
@@ -188,11 +188,11 @@ export default function Contact() {
                     </div>
 
                     {/* Right Side - Contact Form */}
-                    <div className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg shadow-lg shadow-[#e7e7e8]">
+                    <div className="p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg shadow-lg shadow-[#e7e7e8]">
                          <div className="text-center flex justify-center gap-2">
-                            <div className="lg:w-30 w-10 h-px bg-gray-400 m-auto"></div>
-                            <h3 className="lg:text-2xl text-xl text-red-600 font-bold mb-4 ">Send Us a Message</h3>
-                            <div className="lg:w-30 w-10 h-px bg-gray-400 m-auto"></div>
+                            <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
+                            <h3 className="lg:text-2xl text-lg text-red-600 font-bold mb-4 ">Send Us a Message</h3>
+                            <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
                         </div>
                   
                         <form className="space-y-4" onSubmit={handleSubmit}>
