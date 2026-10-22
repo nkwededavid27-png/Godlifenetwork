@@ -143,7 +143,7 @@ function Navmenu() {
 
                                 
                                 <NavLink
-                                    to="/d"
+                                    to="/Media"
                                     onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
@@ -257,7 +257,7 @@ function Navmenu() {
                                     </NavLink>
 
                                     <NavLink
-                                        to="/m"
+                                        to="/Media"
                                         onClick={() => setMenuOpen(false)}
                                         className={({ isActive }) =>
                                             isActive ? "font-bold mt-5 m-auto text-red-600" : "font-bold mt-5 m-auto"

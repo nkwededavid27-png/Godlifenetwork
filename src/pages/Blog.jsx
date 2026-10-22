@@ -1,10 +1,11 @@
 import plc from '../assets/perfectlove-cover.png'
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 
 export default function BlogSection() {
-
+    const { t, } = useTranslation();
     return (
         <>
             <section className="relative h-screen overflow-hidden bg-black">
@@ -14,32 +15,33 @@ export default function BlogSection() {
                         src="/blog-banner.jpg"
                         className="object-cover absolute inset-0 w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-r bg-black/80  to-transparent"></div>
+
+                    <div className="absolute inset-0 bg-linear-to-r bg-black/80 to-transparent"></div>
+
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center max-w-4xl p-3">
-                            <div className="flex justify-center gap-4 ">
-                                <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
-                                    Our Blog page
-                                </button>
 
+                            <div className="flex justify-center gap-4">
+                                <button className="px-6 py-3 font-serif bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
+                                    {t("blogHeroButton")}
+                                </button>
                             </div>
-                            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 
-                                    bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 
-                                    bg-clip-text text-transparent uppercase "
+
+                            <h1
+                                className="text-5xl font-serif sm:text-6xl lg:text-7xl font-bold mb-6
+          bg-linear-to-r from-red-500 via-yellow-500 to-pink-500
+          bg-clip-text text-transparent uppercase"
                             >
-                                GLN Blog
+                                {t("blogHeroTitle")}
                             </h1>
 
-                            <p className="text-xl sm:text-xl text-white/90 mb-10 ">
-                                Articles grounded in the finished work of Christ—crafted to help you grow in grace, hope, and purpose.
+                            <p className="text-xl sm:text-xl text-white/90 mb-10 font-serif">
+                                {t("blogHeroSubtitle")}
                             </p>
 
                         </div>
-
                     </div>
-
                 </div>
-
             </section>
 
 
@@ -49,17 +51,17 @@ export default function BlogSection() {
                     {/* Category Filter */}
                     <div className="space-y-4">
                         <div className="flex items-center justify-between flex-wrap gap-4">
-                            
-                            
+
+
                         </div>
                         <div className="flex flex-wrap gap-3">
                             <NavLink
                                 to="/blog"
                                 className="px-4 py-2 rounded-full text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
                             >
-                                All
+                                {t("blogFilterAll")}
                             </NavLink>
-                            
+
                         </div>
                     </div>
 
@@ -67,10 +69,10 @@ export default function BlogSection() {
                     <div>
                         <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
                             <h3 className="text-xl font-semibold text-gray-900">
-                                Articles by Ifeanyi Ewim
+                                {t("blogArticlesTitle")}
                             </h3>
                             <p className="text-sm uppercase tracking-wide text-gray-400">
-                                Page 1 of 1
+                                {t("blogPageInfo")}
                             </p>
                         </div>
 
@@ -88,7 +90,7 @@ export default function BlogSection() {
                                             />
                                             <div className="absolute top-4 right-4">
                                                 <span className="px-3 py-1 bg-primary-600 text-white rounded-full text-xs font-medium">
-                                                    love
+                                                    {t("perfectLoveCategory")}
                                                 </span>
                                             </div>
                                         </div>
@@ -115,7 +117,7 @@ export default function BlogSection() {
                                                         <line x1="8" x2="8" y1="2" y2="6"></line>
                                                         <line x1="3" x2="21" y1="10" y2="10"></line>
                                                     </svg>
-                                                    <span>February 26, 2026</span>
+                                                    <span>{t("perfectLoveDate")}</span>
                                                 </div>
                                                 <div className="flex items-center space-x-1">
                                                     {/* User Icon */}
@@ -134,18 +136,18 @@ export default function BlogSection() {
                                                         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                                                         <circle cx="12" cy="7" r="4"></circle>
                                                     </svg>
-                                                    <span>Mr. Ifeanyi Ewim</span>
+                                                    <span>{t("perfectLoveAuthor")}</span>
                                                 </div>
                                             </div>
 
                                             <h3 className="text-xl font-semibold mb-3 text-gray-200 group-hover:text-primary-600 transition-colors">
-                                                PERFECT LOVE
+                                                {t("perfectLoveCardTitle")}
                                             </h3>
                                             <p className="text-gray-200 line-clamp-3">
-                                                The nature of God's love, how sin separates us from God's love and the penalty for sin and disobedience.
+                                                {t("perfectLoveCardDescription")}
                                             </p>
                                             <div className="mt-4 text-primary-600 font-medium text-sm group-hover:text-primary-700 transition-colors">
-                                                Read More →
+                                                {t("blogReadMore")}
                                             </div>
                                         </div>
                                     </div>
