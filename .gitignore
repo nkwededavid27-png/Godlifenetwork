@@ -34,3 +34,5 @@ public/Speak-the-right-words.mp4
 *.mp4
 dist/
 node_modules/
+
+public/IMG_*.jpg
