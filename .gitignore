@@ -36,3 +36,6 @@ dist/
 node_modules/
 
 public/IMG_*.jpg
+
+*.mp4
+public/IMG_*.jpg
