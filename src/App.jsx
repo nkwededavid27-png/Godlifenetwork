@@ -10,6 +10,7 @@ import FloatingCard from './components/FloatingCard';
 import Contact from './pages/Contact'
 import { Suspense } from "react";
 import PerfectLove from './pages/subpages/perfect-love';
+import Media from './pages/Media';
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/Event" element={<Event />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Blog/perfect-love" element={<PerfectLove />} />
+          <Route path="/Media" element={<Media />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </main>

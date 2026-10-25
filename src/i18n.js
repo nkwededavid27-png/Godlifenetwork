@@ -27,7 +27,7 @@ i18n.use(initReactI18next).init({
         joinButton3: "View our upcoming event",
 
         Dhomologeo: "Daily homologeo",
-        "slideRight": "Slide to view translations",
+        slideRight: "Slide to view translations",
         homeabout:
           "GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God....",
 
@@ -204,6 +204,64 @@ i18n.use(initReactI18next).init({
         monthlyServicesTitle: "Monthly Services",
         monthlyServicesSchedule: "Every last Thursday",
         monthlyServicesTime: "Service Time: 7:30 PM",
+
+        bblog: "Back to Blog Page",
+
+        perfectLoveTitle: "Perfect Love",
+
+        perfectLoveParagraph1:
+          "Love is said to be a strong or deep caring affection or likeness for someone. This affection exists among family and friends in most cases, hardly will you see anyone love their enemies. People could be lovers today and tomorrow they change their minds and become enemies because they don’t truly understand what it means to be in love. Some people stop loving the moment there is no more benefits. However, we understand from scriptures that there is only one person who has the capacity to love and even die for His enemies just so that they can become His friends. This is no other but Jesus Christ. The nature of God is love. There is no hate in Him, and because of God’s nature, He does not condemn anyone rather He gives everyone the opportunity to come to Him.",
+
+        perfectLoveParagraph2:
+          "The problem of man has always been sin. Sin separated man from God from the day Adam, the first man God created, disobeyed God. The penalty for the disobedience and sin is death, but because of the nature of God, He could not watch man constantly being tormented by the sin nature and the devil. Even after man sinned, God never stopped loving man. He kept chasing after man because man is God’s most precious treasure. Since the only way man could pay for his treason or betrayal is death , God had to step in and pay the ultimate sacrifice for man to redeem us from eternal damnation and death by dying in our place. This is the great substitutionary work of Christ at redemption.(Romans 6:23)",
+
+        perfectLoveParagraph3:
+          "God’s love is so strong that He dropped all His heavenly privileges as a deity and took the form of a man (Though He was God, He did not think of equality with God as something to cling to. Instead, He gave up His divine privileges; He took the humble position of a slave and was born as a human being... Philippians 2:6-7) just so that He can feel what we feel and save us from our sinful state. God came as a man in the person of Jesus Christ, not because of any good thing that we have done but because His love for man is reckless. Even when we were still sinners, Christ died for us to give us eternal life and welcome us to the family of God, so that we can become sons (Ephesians 2:19).",
+
+        perfectLoveParagraph4:
+          "This eternal life is open for all who believe in the sacrifice of Jesus Christ that He offered on the cross just to save man from God’s wrath and eternal damnation. Anyone that receives the life of God is qualified to spend eternity with God in heaven. It does not matter how good or how bad you are, if you are not born again, which means to believe in Jesus Christ and accept His sacrifice and love for you, you are not qualified for the kingdom of God.",
+
+        perfectLoveParagraph5:
+          "Guess what, God loves you even in your struggles, addiction and immoral living, but He loves you too much not to allow you die in your sin and go to hell. No matter how deep you have fallen, His love can pull you out of any bad condition you have gotten yourself into. If you were once a believer and you have backslidden, He still cares so much about you too. Please don’t refuse God’s love because that refusal is what actually condemns a man. God’s love is not just for the church but for the world, so come to Him today (John 3:16) so that you will not spend your eternity in hell. Remember, Jesus Christ is coming soon.",
+
+        perfectLovePrayerTitle:
+          "Say this prayer to receive the life of Christ:",
+
+        perfectLovePrayer:
+          "Lord Jesus, thank you for saving me and for dying for me on the cross. Today I acknowledge that I am a sinner who needs your help. I believe you love me and died for me. Therefore, I receive your life and sacrifice. The power of sin and the devil is broken over my life. Now I am born again. Glory to God.",
+
+        romans623Title: "Romans 6:23 NIV",
+        romans623Text:
+          "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+
+        ephesians219Title: "Ephesians 2:19 NIV",
+        ephesians219Text:
+          "Consequently, you are no longer foreigners and strangers, but fellow citizens with God's people and also members of his household.",
+
+        john316Title: "John 3:16 NIV",
+        john316Text:
+          "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+
+        blogHeroButton: "Our Blog Page",
+        blogHeroTitle: "GLN Blog",
+        blogHeroSubtitle:
+          "Articles grounded in the finished work of Christ, crafted to help you grow in grace, hope, and purpose.",
+
+        blogFilterAll: "All",
+
+        blogArticlesTitle: "Articles by Ifeanyi Ewim",
+        blogPageInfo: "Page 1 of 1",
+
+        perfectLoveCategory: "Love",
+        perfectLoveDate: "February 26, 2026",
+        perfectLoveAuthor: "Mr. Ifeanyi Ewim",
+
+        perfectLoveCardTitle: "PERFECT LOVE",
+
+        perfectLoveCardDescription:
+          "The nature of God's love, how sin separates us from God's love and the penalty for sin and disobedience.",
+
+        blogReadMore: "Read More →",
       },
     },
 
@@ -232,7 +290,7 @@ i18n.use(initReactI18next).init({
         joinButton3: " Voir notre prochain événement",
 
         Dhomologeo: "Homologéo Quotidien",
-        "slideRight": "Glissez pour voir la traductions ",
+        slideRight: "Glissez pour voir la traductions ",
         homeabout:
           "GodLife Network International est une communauté chrétienne où les croyants qui ont reçu la vie du Christ se réunissent dans l'amour pour communier les uns avec les autres et avec l'Esprit de Dieu....",
 
@@ -409,6 +467,64 @@ i18n.use(initReactI18next).init({
         monthlyServicesTitle: "Services mensuels",
         monthlyServicesSchedule: "Chaque dernier jeudi",
         monthlyServicesTime: "Heure du service : 19h30",
+
+        bblog: "Retour à la page du blog",
+
+        perfectLoveTitle: "Amour Parfait",
+
+        perfectLoveParagraph1:
+          "L'amour est considéré comme une affection profonde et sincère ou une grande appréciation envers quelqu'un. Cette affection existe le plus souvent entre les membres d'une famille et les amis. Il est rare de voir quelqu'un aimer ses ennemis. Les gens peuvent être amoureux aujourd'hui et devenir ennemis demain parce qu'ils ne comprennent pas vraiment ce que signifie être amoureux. Certaines personnes cessent d'aimer lorsqu'il n'y a plus d'avantages à en tirer. Cependant, nous comprenons à travers les Écritures qu'il n'existe qu'une seule personne capable d'aimer et même de mourir pour ses ennemis afin qu'ils deviennent ses amis. Cette personne n'est autre que Jésus-Christ. La nature de Dieu est l'amour. Il n'y a aucune haine en Lui et, à cause de Sa nature, Il ne condamne personne mais donne à chacun l'opportunité de venir à Lui.",
+
+        perfectLoveParagraph2:
+          "Le problème de l'homme a toujours été le péché. Le péché a séparé l'homme de Dieu depuis le jour où Adam, le premier homme créé par Dieu, Lui a désobéi. La conséquence du péché et de la désobéissance est la mort. Mais à cause de Sa nature, Dieu ne pouvait pas regarder l'homme être continuellement tourmenté par la nature du péché et par le diable. Même après avoir péché, Dieu n'a jamais cessé d'aimer l'homme. Il a continué à le poursuivre parce que l'homme est Son trésor le plus précieux. Puisque la seule façon pour l'homme de payer sa trahison était la mort , Dieu est intervenu et a payé le sacrifice ultime afin de nous racheter de la damnation éternelle et de la mort en mourant à notre place. C'est la grande œuvre de substitution accomplie par Christ à la rédemption.(Romains 6:23)",
+
+        perfectLoveParagraph3:
+          "L'amour de Dieu est si puissant qu'Il a abandonné tous Ses privilèges célestes en tant que divinité pour prendre la forme d'un homme (Bien qu'Il fût Dieu, Il n'a pas considéré Son égalité avec Dieu comme quelque chose à conserver à tout prix. Au contraire, Il s'est dépouillé Lui-même de Ses privilèges divins ; Il a pris la condition d'un serviteur et est devenu semblable aux hommes... Philippiens 2:6-7) afin de ressentir ce que nous ressentons et de nous sauver de notre état pécheur. Dieu est venu sous la forme d'un homme en la personne de Jésus-Christ, non pas à cause de nos bonnes œuvres, mais parce que Son amour pour l'humanité est immense. Alors même que nous étions encore pécheurs, Christ est mort pour nous donner la vie éternelle et nous accueillir dans la famille de Dieu afin que nous devenions Ses enfants (Éphésiens 2:19).",
+
+        perfectLoveParagraph4:
+          "Cette vie éternelle est offerte à tous ceux qui croient au sacrifice de Jésus-Christ sur la croix pour sauver l'humanité de la colère de Dieu et de la damnation éternelle. Toute personne qui reçoit la vie de Dieu est qualifiée pour passer l'éternité avec Dieu au ciel. Peu importe à quel point vous êtes bon ou mauvais ; si vous n'êtes pas né de nouveau, c'est-à-dire si vous ne croyez pas en Jésus-Christ et n'acceptez pas Son sacrifice et Son amour pour vous, vous n'êtes pas qualifié pour entrer dans le royaume de Dieu.",
+
+        perfectLoveParagraph5:
+          "Devinez quoi ? Dieu vous aime même au milieu de vos luttes, de vos dépendances et de votre vie immorale. Mais Il vous aime trop pour vous laisser mourir dans votre péché et aller en enfer. Peu importe jusqu'où vous êtes tombé, Son amour peut vous relever de n'importe quelle situation dans laquelle vous vous trouvez. Si vous avez déjà été croyant et que vous vous êtes éloigné de Dieu, sachez qu'Il tient encore profondément à vous. Ne rejetez pas l'amour de Dieu, car c'est ce rejet qui condamne réellement l'homme. L'amour de Dieu n'est pas seulement pour l'Église mais pour le monde entier. Venez donc à Lui aujourd'hui (Jean 3:16) afin de ne pas passer votre éternité en enfer. Souvenez-vous, Jésus-Christ revient bientôt.",
+
+        perfectLovePrayerTitle:
+          "Faites cette prière pour recevoir la vie de Christ :",
+
+        perfectLovePrayer:
+          "Seigneur Jésus, merci de m'avoir sauvé et d'être mort pour moi sur la croix. Aujourd'hui, je reconnais que je suis un pécheur qui a besoin de Ton aide. Je crois que Tu m'aimes et que Tu es mort pour moi. Par conséquent, je reçois Ta vie et Ton sacrifice. La puissance du péché et du diable est brisée sur ma vie. Maintenant, je suis né de nouveau. Gloire à Dieu.",
+
+        romans623Title: "Romains 6:23 NIV",
+        romans623Text:
+          "Car le salaire du péché, c'est la mort ; mais le don gratuit de Dieu, c'est la vie éternelle en Jésus-Christ notre Seigneur.",
+
+        ephesians219Title: "Éphésiens 2:19 NIV",
+        ephesians219Text:
+          "Ainsi donc, vous n'êtes plus des étrangers ni des gens du dehors ; mais vous êtes concitoyens des saints, gens de la maison de Dieu.",
+
+        john316Title: "Jean 3:16 NIV",
+        john316Text:
+          "Car Dieu a tant aimé le monde qu'il a donné son Fils unique, afin que quiconque croit en lui ne périsse point, mais qu'il ait la vie éternelle.",
+
+        blogHeroButton: "Notre Page de Blog",
+        blogHeroTitle: "Blog GLN",
+        blogHeroSubtitle:
+          "Des articles fondés sur l'œuvre accomplie du Christ, conçus pour vous aider à grandir dans la grâce, l'espérance et votre destinée.",
+
+        blogFilterAll: "Tous",
+
+        blogArticlesTitle: "Articles par Ifeanyi Ewim",
+        blogPageInfo: "Page 1 sur 1",
+
+        perfectLoveCategory: "Amour",
+        perfectLoveDate: "26 Février 2026",
+        perfectLoveAuthor: "M. Ifeanyi Ewim",
+
+        perfectLoveCardTitle: "AMOUR PARFAIT",
+
+        perfectLoveCardDescription:
+          "La nature de l'amour de Dieu, comment le péché nous sépare de l'amour de Dieu et la conséquence du péché et de la désobéissance.",
+
+        blogReadMore: "Lire la suite →",
       },
     },
   },

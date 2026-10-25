@@ -24,3 +24,13 @@ dist-ssr
 *.sw?
 
 .vercel
+
+*.mp4
+
+public/featured-vid2.mp4
+public/featured-video.mp4
+public/Speak-the-right-words.mp4
+
+*.mp4
+dist/
+node_modules/

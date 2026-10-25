@@ -340,7 +340,7 @@ export default function About() {
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center pb-10">
                         <NavLink
-                            to="/"
+                            to="/contact"
                             className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-linear-to-r from-red-500 to-pink-500 text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed px-8 py-4 text-lg"
                         >
                             {t("contactUsButton")}

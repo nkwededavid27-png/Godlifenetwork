@@ -341,7 +341,7 @@ export default function Contact() {
 
                 {/* Map Section */}
                 <div className="mt-12">
-                    <h3 className="text-2xl font-semibold mb-4">Our Location</h3>
+                    <h3 className="text-2xl font-semibold mb-4 p-3">Our Location</h3>
                     <div className="w-full h-64 bg-gray-200 rounded-lg">[Map Embed Here]</div>
                 </div>
 

@@ -109,7 +109,7 @@ export default function Home() {
                             <h2 className="card-title uppercase">{t("event1Title")}</h2>
                             <p>{t("event1Desc")}</p>
                             <div className="card-actions">
-                                <NavLink to='/Blog' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <NavLink to='/media' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ export default function Home() {
                             <h2 className="card-title uppercase">{t("event2Title")}</h2>
                             <p>{t("event2Desc")}</p>
                             <div className="card-actions">
-                                <NavLink to='/Blog' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <NavLink to='/media' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ export default function Home() {
                             <h2 className="card-title uppercase">{t("event3Title")}</h2>
                             <p>{t("event3Desc")}</p>
                             <div className="card-actions">
-                                <NavLink to='/Blog' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <NavLink to='/media' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
                             </div>
                         </div>
                     </div>
