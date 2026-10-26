@@ -152,7 +152,7 @@ export default function Contact() {
                         </div>
 
                         <div className="grid grid-cols-3 space-x-4 m-auto">
-                            <a href="#" className="text-center place-items-center">
+                            <a target="_blank" rel="noopener noreferrer" href="https://web.facebook.com/profile.php?id=61556110006448" className="text-center place-items-center">
 
                                 <svg
                                     className="text-center"
