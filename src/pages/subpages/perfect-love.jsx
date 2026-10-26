@@ -31,18 +31,18 @@ export default function PerfectLove() {
 
                 <div className="flex items-center justify-between mb-6 flex-wrap gap-4 
                 shadow-[0_0_15px_rgba(255,0,150,0.6),0_0_30px_rgba(255,0,150,0.4)] rounded-lg">
-                    <h3 className="text-xl lg:text-5xl font-[sans-serif] text-red-900 uppercase ml-20 p-5">
+                    <h3 className=" md:text-4xl text-3xl lg:text-5xl font-[sans-serif] text-red-900 uppercase ml-20 p-5">
                         {t("perfectLoveTitle")}
                     </h3>
 
-                    <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                    <p className="text-xl font-serif text-left tracking-wider text-black p-5">
                         {t("perfectLoveParagraph1")}
                     </p>
 
 
 
 
-                    <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                    <p className="text-xl font-serif text-left tracking-wider text-black p-5">
                         {t("perfectLoveParagraph2")}
                     </p>
 
@@ -50,13 +50,13 @@ export default function PerfectLove() {
                         <div className="w-1 h-50 ml-5 bg-red-700"></div>
                         <div className="ml-5 text-left">
                             <h3 className="text-lg text-red-500 font-serif">{t("romans623Title")}</h3>
-                            <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                            <p className="text-xl from-neutral-600 text-left tracking-wider text-black p-5">
                                 {t("romans623Text")}
                             </p>
                         </div>
                     </div>
 
-                    <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                    <p className="text-xl font-serif text-left tracking-wider text-black p-5">
                         {t("perfectLoveParagraph3")}
                     </p>
 
@@ -64,17 +64,17 @@ export default function PerfectLove() {
                         <div className="w-1 h-50 ml-5 bg-red-700"></div>
                         <div className="ml-5 text-left">
                             <h3 className="text-lg text-red-500 font-serif">{t("ephesians219Title")}</h3>
-                            <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                            <p className="text-xl from-neutral-600 text-left tracking-wider text-black p-5">
                                 {t("ephesians219Text")}
                             </p>
                         </div>
                     </div>
 
-                    <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                    <p className="text-xl font-serif text-left tracking-wider text-black p-5">
                         {t("perfectLoveParagraph4")}
                     </p>
 
-                    <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                    <p className="text-xl font-serif text-left tracking-wider text-black p-5">
                         {t("perfectLoveParagraph5")}
                     </p>
 
@@ -82,7 +82,7 @@ export default function PerfectLove() {
                         <div className="w-1 h-50 ml-5 bg-red-700"></div>
                         <div className="ml-5 text-left">
                             <h3 className="text-lg text-red-500 font-serif">{t("john316Title")}</h3>
-                            <p className="text-xl font-[Cursive] text-left tracking-wider text-black p-5">
+                            <p className="text-xl from-neutral-600 text-left tracking-wider text-black p-5">
                                 {t("john316Text")}
                             </p>
                         </div>

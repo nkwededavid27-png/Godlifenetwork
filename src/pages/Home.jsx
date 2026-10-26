@@ -36,9 +36,9 @@ export default function Home() {
 
             <div className="text-center p-5 bg-white rounded-3xl shadow-lg shadow-red-600 lg:m-4 m-3">
                 <h1 className="text-black uppercase p-3 lg:p-15 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black ">{t("Dhomologeo")}</h1>
-                <p className="sm:hidden md:hidden lg:hidden text-lg p-4 text-gray-600 ">{t("slideRight")}</p>
+                <p className=" md:hidden lg:hidden text-lg p-4 text-gray-600 ">{t("slideRight")}</p>
                 {/**Laptop homologeo */}
-                <div className="hidden lg:grid sm:grid sm:grid-cols-1 md:grid md:grid-cols-1 lg:grid-cols-2 p-5 gap-5">
+                <div className="hidden lg:grid  md:grid md:grid-cols-1 lg:grid-cols-2 p-5 gap-5">
                     <div>
                         <img
                             className="w-ful shadow-lg shadow-red-600 from-red-400 via-yellow-400 "
@@ -54,18 +54,18 @@ export default function Home() {
 
                 {/**mobile homologeo */}
 
-                <div className="pt-5 lg:hidden carousel rounded-box w-full shadow-lg h-100 shadow-red-600 from-red-400 via-yellow-400">
+                <div className="pt-5 md:hidden lg:hidden carousel rounded-box w-full shadow-lg h-100 shadow-red-600 from-red-400 via-yellow-400">
                     <div className="carousel-item w-full">
                         <img
                             src="https://scontent.fcoo2-2.fna.fbcdn.net/v/t39.30808-6/817329473_122304146540203666_9210632606273483348_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHjvUZGMX-xaKlxVW-VBth3L9zJF_M86yYv3MkX8zzrJvlWGQ5N45lieljRaWnNpS_HkNG5w-kJxXe4ppq6GHFh&_nc_ohc=j0ky683Oi1gQ7kNvwGfBH6m&_nc_oc=AdqjhR3XB4BqgPTYo8qU2eJAxzy_qFbEh7zcxJ243WYq_3S_tMqWoApa7qEjbVtNZlc&_nc_zt=23&_nc_ht=scontent.fcoo2-2.fna&_nc_gid=ODocZ99iZa6yw6Y_R8HX8A&_nc_ss=7b2a8&oh=00_AQNBb9AL8k5wolnZfa7yL8NHD28QQMFnzHpQzIT1DaG7EQ&oe=6AD88FDA"
                             className="w-full"
-                            alt="Tailwind CSS Carousel component" />
+                            alt="homologeo image" />
                     </div>
                     <div className="carousel-item w-full">
                         <img
                             src="https://scontent.fcoo2-1.fna.fbcdn.net/v/t39.30808-6/816394331_122304146624203666_4345671479326021329_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEF3RfPpjewIV0kb93l_LPdPVY7SvE6Els9VjtK8ToSW918jqKD0L9qUUJQyyCsykaHA5tq_YSV1xHxC3n26RJA&_nc_ohc=kMp4H26G4_wQ7kNvwGuBmBu&_nc_oc=AdqTTaRtvcVVptvwZqYRdzQOV1JItr9noS6mCt3qiSps6zDCtwq_qlHFoUz0Yn1UeNQ&_nc_zt=23&_nc_ht=scontent.fcoo2-1.fna&_nc_gid=EWbc3fmmVHxp-uhZ02UtKA&_nc_ss=7b2a8&oh=00_AQNzUVuwh9HBNAtbuy6xrZJeIgmgdN4JHo5QZysReys0FA&oe=6AD89B90"
                             className="w-full"
-                            alt="Tailwind CSS Carousel component" />
+                            alt="homologeo image" />
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
                             <h2 className="card-title uppercase">{t("event1Title")}</h2>
                             <p>{t("event1Desc")}</p>
                             <div className="card-actions">
-                                <NavLink to='/media' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ export default function Home() {
                             <h2 className="card-title uppercase">{t("event2Title")}</h2>
                             <p>{t("event2Desc")}</p>
                             <div className="card-actions">
-                                <NavLink to='/media' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ export default function Home() {
                             <h2 className="card-title uppercase">{t("event3Title")}</h2>
                             <p>{t("event3Desc")}</p>
                             <div className="card-actions">
-                                <NavLink to='/media' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
                             </div>
                         </div>
                     </div>
@@ -299,7 +299,7 @@ export default function Home() {
 
                         <div className="flex items-center justify-center pt-10 lg:pt-0">
                             <NavLink
-                                to="/Contact"
+                                to="/Contact#Prayer-Request"
                                 className=" flex px-6 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-colors duration-300"
                             >
                                 {t("contactBtn")} <SquareArrowRightEnter className="ml-3" />

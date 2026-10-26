@@ -189,16 +189,16 @@ export default function Contact() {
 
                     {/* Right Side - Contact Form */}
                     <div className="p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg shadow-lg shadow-[#e7e7e8]">
-                         <div className="text-center flex justify-center gap-2">
+                        <div className="text-center flex justify-center gap-2">
                             <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
                             <h3 className="lg:text-2xl text-lg text-red-600 font-bold mb-4 ">Send Us a Message</h3>
                             <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
                         </div>
-                  
+
                         <form className="space-y-4" onSubmit={handleSubmit}>
                             <input
                                 type="text"
-                                name="name"j
+                                name="name" j
                                 placeholder="Your Name"
                                 value={formData.name}
                                 onChange={handleChange}
@@ -340,10 +340,11 @@ export default function Contact() {
                 </div>
 
                 {/* Map Section */}
-                
+
 
                 {/* Prayer Request Section */}
                 <div
+                    id="Prayer-Request"
                     className="mt-12 flex flex-col justify-center items-center text-center h-96 bg-cover bg-center"
                     style={{
                         backgroundImage:
@@ -351,7 +352,7 @@ export default function Contact() {
                     }}
                 >
                     <h3 className="text-4xl text-black font-bold mb-4">Join Us in Prayer</h3>
-                    <p className="mb-4 text-black">Let us know how we can pray for you</p>
+                    <p className="mb-4 text-white">Let us know how we can pray for you</p>
                     <button
                         onClick={() => setShowModal(true)}
                         className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"

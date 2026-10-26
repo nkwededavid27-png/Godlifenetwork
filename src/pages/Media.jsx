@@ -80,7 +80,7 @@ export default function Media() {
             {t("mediaHeroTitle")}
           </h1>
 
-          <p className="text-sm md:text-xl font-[cursive] max-w-2xl mx-auto pt-5">
+          <p className="text-sm md:text-xl font-serif max-w-2xl mx-auto pt-5">
             {t("mediaHeroSubtitle")}
           </p>
         </div>
