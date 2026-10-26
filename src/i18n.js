@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
 
         heroTitle3: "Join our next event",
         heroSubtitle3:
-          "Fellowship and partnership with us in our next event and experience the mighty move of God.",
+          "fellowship and partnership with us in our next event and experience the mighty move of God.",
         joinButton3: "View our upcoming event",
 
         Dhomologeo: "Daily homologeo",
@@ -83,12 +83,12 @@ i18n.use(initReactI18next).init({
         homologeoDesc:
           "Start your day with our daily declarations on our About page.",
         homologeoBtn: "View in About Page",
-        followFacebookBtn: "Follow on Facebook",
+        followFacebookBtn: "follow on Facebook",
 
         contactTagline: "Contact",
         contactTitle: "Need a prayer?",
         contactDesc:
-          'We would like to pray with you in your prayers. "For where two or three gather in my name, there am I with them." - Matthew 18:20.',
+          'We would like to pray with you in your prayers. for where two or three gather in my name, there am I with them." - Matthew 18:20.',
         contactBtn: "View Contact Page",
 
         //translations for about page
@@ -232,7 +232,7 @@ i18n.use(initReactI18next).init({
 
         romans623Title: "Romans 6:23 NIV",
         romans623Text:
-          "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+          "for the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
 
         ephesians219Title: "Ephesians 2:19 NIV",
         ephesians219Text:
@@ -240,7 +240,7 @@ i18n.use(initReactI18next).init({
 
         john316Title: "John 3:16 NIV",
         john316Text:
-          "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+          "for God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
 
         blogHeroButton: "Our Blog Page",
         blogHeroTitle: "GLN Blog",
@@ -253,7 +253,7 @@ i18n.use(initReactI18next).init({
         blogPageInfo: "Page 1 of 1",
 
         perfectLoveCategory: "Love",
-        perfectLoveDate: "February 26, 2026",
+        perfectLoveDate: "february 26, 2026",
         perfectLoveAuthor: "Mr. Ifeanyi Ewim",
 
         perfectLoveCardTitle: "PERFECT LOVE",
@@ -262,6 +262,63 @@ i18n.use(initReactI18next).init({
           "The nature of God's love, how sin separates us from God's love and the penalty for sin and disobedience.",
 
         blogReadMore: "Read More →",
+
+        mediaHeroTitle: "Media Center",
+        mediaHeroSubtitle:
+          "Watch, listen and grow through life-changing messages and resources.",
+
+        featuredMessageTitle: "Featured Message",
+
+        featuredVideoTitle: "Christmas Carol",
+
+        featuredVideoDescription:
+          "Discover how God's grace empowers believers to live victorious lives.",
+
+        watchNowButton: "Watch Now",
+
+        mediaCategorySermons: "Sermons",
+        mediaCategoryPodcasts: "Podcasts",
+        mediaCategoryPhotos: "Photos",
+        mediaCategoryVideos: "Videos",
+
+        recentMessagesTitle: "Recent Messages",
+
+        mediaMessage1Title: "Standout",
+        mediaMessage1Speaker: "Ifeanyi Ewim",
+
+        mediaMessage2Title: "HOMOLOGEO: Speak the Right Words",
+        mediaMessage2Speaker: "Ifeanyi Ewim",
+
+        mediaMessage3Title: "Perfect Love",
+        mediaMessage3Speaker: "Ifeanyi Ewim",
+
+        youtubeTitle: "Stay Connected",
+
+        youtubeDescription:
+          "Subscribe to our YouTube channel and never miss a message.",
+
+        youtubeButton: "Subscribe Now",
+
+        mediaMessages: [
+          {
+            title: "Standout",
+            speaker: "Ifeanyi Ewim",
+            poster: "/standout-cover.png",
+            video: "/featured-video.mp4",
+          },
+          {
+            title: "HOMOLOGEO: Speak the Right Words",
+            speaker: "Ifeanyi Ewim",
+            poster: "/homologeo-cover.png",
+            video: "/Speak-the-right-words.mp4",
+          },
+          {
+            title: "Perfect Love",
+            speaker: "Ifeanyi Ewim",
+            poster: "/perfect-love-cover.png",
+            video: "/grace.mp4",
+          },
+        ],
       },
     },
 
@@ -312,13 +369,13 @@ i18n.use(initReactI18next).init({
         prevEventsTitle: "Nos événements précédents",
         prevEventsDesc:
           "Découvrez nos anciens événements, sorties et rassemblements.",
-        event1Title: "Fête de louange de Jésus octobre 2026",
+        event1Title: "fête de louange de Jésus octobre 2026",
         event1Desc:
           "Voici d'autres magnifiques moments de louange intense, d'adoration et de remerciement. Dieu était vraiment au milieu de nous !",
         event2Title: "AOF Édition février 2026",
         event2Desc:
           "Découvrez l'édition précédente de l'Autel d'adoration de février. Voici d'autres magnifiques moments de notre service de la Saint-Valentin.",
-        event3Title: "Fête de louange de Jésus octobre 2025",
+        event3Title: "fête de louange de Jésus octobre 2025",
         event3Desc:
           "Voici d'autres magnifiques moments de louange intense, d'adoration et de remerciement. Dieu était vraiment au milieu de nous !",
         viewMoreBtn: "Voir plus",
@@ -488,7 +545,7 @@ i18n.use(initReactI18next).init({
           "Devinez quoi ? Dieu vous aime même au milieu de vos luttes, de vos dépendances et de votre vie immorale. Mais Il vous aime trop pour vous laisser mourir dans votre péché et aller en enfer. Peu importe jusqu'où vous êtes tombé, Son amour peut vous relever de n'importe quelle situation dans laquelle vous vous trouvez. Si vous avez déjà été croyant et que vous vous êtes éloigné de Dieu, sachez qu'Il tient encore profondément à vous. Ne rejetez pas l'amour de Dieu, car c'est ce rejet qui condamne réellement l'homme. L'amour de Dieu n'est pas seulement pour l'Église mais pour le monde entier. Venez donc à Lui aujourd'hui (Jean 3:16) afin de ne pas passer votre éternité en enfer. Souvenez-vous, Jésus-Christ revient bientôt.",
 
         perfectLovePrayerTitle:
-          "Faites cette prière pour recevoir la vie de Christ :",
+          "faites cette prière pour recevoir la vie de Christ :",
 
         perfectLovePrayer:
           "Seigneur Jésus, merci de m'avoir sauvé et d'être mort pour moi sur la croix. Aujourd'hui, je reconnais que je suis un pécheur qui a besoin de Ton aide. Je crois que Tu m'aimes et que Tu es mort pour moi. Par conséquent, je reçois Ta vie et Ton sacrifice. La puissance du péché et du diable est brisée sur ma vie. Maintenant, je suis né de nouveau. Gloire à Dieu.",
@@ -525,6 +582,66 @@ i18n.use(initReactI18next).init({
           "La nature de l'amour de Dieu, comment le péché nous sépare de l'amour de Dieu et la conséquence du péché et de la désobéissance.",
 
         blogReadMore: "Lire la suite →",
+        mediaHeroTitle: "Centre Multimédia",
+
+        mediaHeroSubtitle:
+          "Regardez, écoutez et grandissez grâce à des messages et des ressources qui transforment des vies.",
+
+        featuredMessageTitle: "Message en Vedette",
+
+        featuredVideoTitle: "Chants de Noël",
+
+        featuredVideoDescription:
+          "Découvrez comment la grâce de Dieu permet aux croyants de vivre une vie victorieuse.",
+
+        watchNowButton: "Regarder Maintenant",
+
+        mediaCategorySermons: "Prédications",
+
+        mediaCategoryPodcasts: "Podcasts",
+
+        mediaCategoryPhotos: "Photos",
+
+        mediaCategoryVideos: "Vidéos",
+
+        recentMessagesTitle: "Messages Récents",
+
+        mediaMessage1Title: "Démarquez-vous",
+        mediaMessage1Speaker: "Ifeanyi Ewim",
+
+        mediaMessage2Title: "HOMOLOGEO : Prononcez les Bonnes Paroles",
+        mediaMessage2Speaker: "Ifeanyi Ewim",
+
+        mediaMessage3Title: "Amour Parfait",
+        mediaMessage3Speaker: "Ifeanyi Ewim",
+
+        youtubeTitle: "Restez Connectés",
+
+        youtubeDescription:
+          "Abonnez-vous à notre chaîne YouTube et ne manquez jamais un message.",
+
+        youtubeButton: "Abonnez-vous Maintenant",
+
+        mediaMessages: [
+          {
+            title: "Démarquez-vous",
+            speaker: "Ifeanyi Ewim",
+            poster: "/standout-cover.png",
+            video: "/featured-video.mp4",
+          },
+          {
+            title: "HOMOLOGEO : Prononcez les bonnes paroles",
+            speaker: "Ifeanyi Ewim",
+            poster: "/homologeo-cover.png",
+            video: "/Speak-the-right-words.mp4",
+          },
+          {
+            title: "Amour Parfait",
+            speaker: "Ifeanyi Ewim",
+            poster: "/perfect-love-cover.png",
+            video: "/grace.mp4",
+          },
+        ],
       },
     },
   },

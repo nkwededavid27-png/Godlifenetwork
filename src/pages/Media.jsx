@@ -12,6 +12,7 @@ import featuredvideo from '../assets/featured-Video-Cover.jpg'
 import MediaCard from '../components/MediaCard'
 import Gallery from "../components/Gallery";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -52,26 +53,10 @@ export default function Media() {
     setProgress(value);
   };
 
-  const mediaMessages = [
-    {
-      title: t("mediaMessage1Title"),
-      speaker: t("mediaMessage1Speaker"),
-      poster: "/standout-cover.png",
-      video: "/featured-video.mp4",
-    },
-    {
-      title: t("mediaMessage2Title"),
-      speaker: t("mediaMessage2Speaker"),
-      poster: "/homologeo-cover.png",
-      video: "/Speak-the-right-words.mp4",
-    },
-    {
-      title: t("mediaMessage3Title"),
-      speaker: t("mediaMessage3Speaker"),
-      poster: "/perfect-love-cover.png",
-      video: "/grace.mp4",
-    },
-  ];
+  
+  const mediaMessages = t("mediaMessages", {
+    returnObjects: true,
+  });
 
 
 
@@ -90,12 +75,12 @@ export default function Media() {
       >
         <div className="absolute inset-0 bg-black/70" />
 
-        <div className="relative text-center text-white z-10">
-          <h1 className="text-5xl lg:text-7xl text-red-600 font-bold mb-5">
+        <div className="relative  text-center z-10">
+          <h1 className=" text-red-600 text-3xl md:text-6xl font-bold">
             {t("mediaHeroTitle")}
           </h1>
 
-          <p className="text-xl max-w-2xl mx-auto">
+          <p className="text-sm md:text-xl font-[cursive] max-w-2xl mx-auto pt-5">
             {t("mediaHeroSubtitle")}
           </p>
         </div>
@@ -183,45 +168,46 @@ export default function Media() {
       <section className="py-12 px-5 lg:px-12">
         <div className="grid md:grid-cols-4 gap-6">
 
-          <div className="bg-white p-8 rounded-xl shadow text-center">
+          <NavLink to='/blog#sermon' className="bg-white p-8 rounded-xl shadow text-center">
             <Play size={40} className="mx-auto text-red-600 mb-4" />
             <h3 className="font-bold text-gray-950 text-lg">
               {t("mediaCategorySermons")}
             </h3>
-          </div>
+          </NavLink >
 
-          <div className="bg-white p-8 rounded-xl shadow text-center">
+          <NavLink to='' className="bg-white p-8 rounded-xl shadow text-center">
             <Headphones size={40} className="mx-auto text-red-600 mb-4" />
             <h3 className="font-bold text-gray-950 text-lg">
               {t("mediaCategoryPodcasts")}
             </h3>
-          </div>
+          </NavLink >
 
-          <div className="bg-white p-8 rounded-xl shadow text-center">
+          <NavLink to='#gallery' className="bg-white p-8 rounded-xl shadow text-center">
             <ImageIcon size={40} className="mx-auto text-red-600 mb-4" />
             <h3 className="font-bold text-gray-950 text-lg">
               {t("mediaCategoryPhotos")}
             </h3>
-          </div>
+          </NavLink >
 
-          <div className="bg-white p-8 rounded-xl shadow text-center">
+          <NavLink to='#videos' className="bg-white p-8 rounded-xl shadow text-center">
             <Video size={40} className="mx-auto text-red-600 mb-4" />
             <h3 className="font-bold text-gray-950 text-lg">
               {t("mediaCategoryVideos")}
+
             </h3>
-          </div>
+          </NavLink>
 
         </div>
       </section>
 
       {/* RECENT MESSAGES */}
 
-      <section className="py-20 px-5 lg:px-12">
+      <section id="videos" className="py-20 px-5 lg:px-12">
         <h2 className="text-4xl text-red-600 font-bold mb-12 text-center">
           {t("recentMessagesTitle")}
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mediaMessages.map((message, index) => (
             <MediaCard key={index} message={message} />
           ))}
@@ -232,23 +218,23 @@ export default function Media() {
       </section >
 
       {/* PHOTO GALLERY */}
-
-      < Gallery />
-
+      <div id='gallery'>
+        < Gallery />
+      </div>
       {/* YOUTUBE CTA */}
 
       < section className="py-20 bg-red-600 text-white text-center" >
         <h2 className="text-4xl font-bold mb-5">
-          Stay Connected
+          {t("youtubeTitle")}
         </h2>
 
         <p className="max-w-2xl mx-auto mb-8">
-          Subscribe to our YouTube channel and never miss a message.
+          {t("youtubeDescription")}
         </p>
 
         <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@godlifenetworkintl?si=uZbN94EzlnbOsHLS">
           <button className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold">
-            Subscribe Now
+            {t("youtubeButton")}
           </button>
         </a>
 

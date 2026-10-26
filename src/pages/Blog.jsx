@@ -46,7 +46,7 @@ export default function BlogSection() {
 
 
 
-            <section className="section-padding bg-white p-10">
+            <section id='sermon' className="section-padding bg-white p-10">
                 <div className="container-max space-y-16">
                     {/* Category Filter */}
                     <div className="space-y-4">
