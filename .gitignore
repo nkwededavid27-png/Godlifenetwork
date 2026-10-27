@@ -27,7 +27,7 @@ dist-ssr
 
 
 
-public/featured-vid2.mp4
+
 
 
 
@@ -35,6 +35,6 @@ public/featured-vid2.mp4
 dist/
 node_modules/
 
-public/IMG_*.jpg
+
 
 
