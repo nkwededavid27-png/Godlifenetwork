@@ -7,14 +7,16 @@ import emailjs from "@emailjs/browser";
 
 
 export default function Contact() {
-    const [formData, setFormData] = useState({
+    const initialFormState = {
         name: "",
         email: "",
         countryCode: "+234",
         phone: "",
         subject: "",
         message: "",
-    });
+    };
+
+    const [formData, setFormData] = useState(initialFormState);
 
     const [successMessage, setSuccessMessage] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
@@ -44,12 +46,24 @@ export default function Contact() {
                 () => {
                     setSuccessMessage("✅ Message sent successfully!");
                     setErrorMessage("");
-                    setTimeout(() => setSuccessMessage(""), 3000); // clears after 3s
+
+                    // Clear form
+                    setFormData({
+                        name: "",
+                        email: "",
+                        countryCode: "+234",
+                        phone: "",
+                        subject: "",
+                        message: "",
+                    });
+
+                    setTimeout(() => setSuccessMessage(""), 5000);
                 },
                 () => {
                     setErrorMessage("❌ Failed to send message. Please try again.");
                     setSuccessMessage("");
-                    setTimeout(() => setErrorMessage(""), 3000); // clears after 3s
+
+                    setTimeout(() => setErrorMessage(""), 5000);
                 }
             );
 
@@ -57,6 +71,7 @@ export default function Contact() {
 
     const [showModal, setShowModal] = useState(false);
     const [formData2, setFormData2] = useState({
+        email: "",
         countryCode: "+234",
         phone: "",
         message: "",
@@ -77,6 +92,7 @@ export default function Contact() {
                 "service_tjfnvlf",
                 "template_7bo8o68",
                 {
+                    email: formData2.email,
                     phone: fullPhone,
                     message: formData2.message, // ✅ fixed
                 },
@@ -84,14 +100,22 @@ export default function Contact() {
             )
             .then(
                 () => {
-                    setSuccessMessage2("🙏 Prayer request sent successfully!");
+                    setSuccessMessage2("✅ Message sent successfully!");
                     setErrorMessage2("");
-                    setTimeout(() => setSuccessMessage2(""), 3000);
+
+                    // Clear form
+                    setFormData2({
+                        phone: "",
+                        message: "",
+                    });
+
+                    setTimeout(() => setSuccessMessage2(""), 5000);
                 },
                 () => {
-                    setErrorMessage2("❌ Failed to send prayer request.");
+                    setErrorMessage2("❌ Failed to send message. Please try again.");
                     setSuccessMessage2("");
-                    setTimeout(() => setErrorMessage2(""), 3000);
+
+                    setTimeout(() => setErrorMessage2(""), 5000);
                 }
             );
     };
@@ -366,6 +390,15 @@ export default function Contact() {
                             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
                                 <h3 className="text-xl text-gray-600 font-semibold mb-4">Prayer Request</h3>
                                 <form className="space-y-4" onSubmit={handleSubmit2}>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Your Email"
+                                        value={formData2.email}
+                                        onChange={handleChange2}
+                                        className="w-full border p-2 rounded bg-white text-black"
+                                        required
+                                    />
                                     <div className="flex space-x-2">
                                         <select
                                             name="countryCode"
@@ -453,6 +486,7 @@ export default function Contact() {
                                             placeholder="812 345 6789"
                                             value={formData2.phone}
                                             onChange={handleChange2}
+                                            required
                                             className="flex-1 border p-2 rounded bg-white text-black"
                                         />
                                     </div>
