@@ -1,12 +1,15 @@
 import { Mail, MapPin, PhoneCall } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 
 
 
 
 export default function Contact() {
+    const [loading, setLoading] = useState(false);
+    const { t } = useTranslation();
     const initialFormState = {
         name: "",
         email: "",
@@ -44,23 +47,18 @@ export default function Contact() {
             )
             .then(
                 () => {
-                    setSuccessMessage("✅ Message sent successfully!");
-                    setErrorMessage("");
+                    setLoading(false);
 
-                    // Clear form
-                    setFormData({
-                        name: "",
-                        email: "",
-                        countryCode: "+234",
-                        phone: "",
-                        subject: "",
-                        message: "",
-                    });
+                    setSuccessMessage(t("contactSuccessMessage"));
+                    setErrorMessage("");
+                    setFormData(initialFormState);
 
                     setTimeout(() => setSuccessMessage(""), 5000);
                 },
                 () => {
-                    setErrorMessage("❌ Failed to send message. Please try again.");
+                    setLoading(false);
+
+                    setErrorMessage(t("contactErrorMessage"));
                     setSuccessMessage("");
 
                     setTimeout(() => setErrorMessage(""), 5000);
@@ -100,7 +98,7 @@ export default function Contact() {
             )
             .then(
                 () => {
-                    setSuccessMessage2("✅ Message sent successfully!");
+                    setSuccessMessage2(t("prayerSuccessMessage"));
                     setErrorMessage2("");
 
                     // Clear form
@@ -112,7 +110,7 @@ export default function Contact() {
                     setTimeout(() => setSuccessMessage2(""), 5000);
                 },
                 () => {
-                    setErrorMessage2("❌ Failed to send message. Please try again.");
+                    setErrorMessage2(t("prayerErrorMessage"));
                     setSuccessMessage2("");
 
                     setTimeout(() => setErrorMessage2(""), 5000);
@@ -121,15 +119,24 @@ export default function Contact() {
     };
 
     return (
+
         <>
             <div className=" w-full">
                 {/* Header Banner */}
                 <div
                     className="relative h-120 bg-cover bg-center flex flex-col justify-center items-center text-white"
-                    style={{ backgroundImage: "url('https://i.pinimg.com/1200x/4f/a2/aa/4fa2aae3f69c3c53cc1dbf72237f3f5b.jpg')" }}
+                    style={{
+                        backgroundImage:
+                            "url('https://i.pinimg.com/1200x/4f/a2/aa/4fa2aae3f69c3c53cc1dbf72237f3f5b.jpg')",
+                    }}
                 >
-                    <h2 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent uppercase">Contact Us</h2>
-                    <p className="text-lg text-black font-serif mt-2">We'd love to hear from you!</p>
+                    <h2 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent uppercase">
+                        {t("contactHeroTitle")}
+                    </h2>
+
+                    <p className="text-lg text-black font-serif mt-2">
+                        {t("contactHeroSubtitle")}
+                    </p>
                 </div>
 
                 {/* Grid Layout */}
@@ -138,15 +145,20 @@ export default function Contact() {
                     <div className=" p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg   group w-full   shadow-lg shadow-[#e7e7e8] ">
                         <div className="text-center flex justify-center gap-2">
                             <div className="lg:w-30 w-10 h-px bg-gray-400 m-auto"></div>
-                            <h3 className="lg:text-2xl text-xl text-red-600 font-bold mb-4 ">Get In Touch</h3>
+                            <h3 className="lg:text-2xl text-xl text-red-600 font-bold mb-4">
+                                {t("contactGetInTouch")}
+                            </h3>
                             <div className="lg:w-30 w-10 h-px bg-gray-400 m-auto"></div>
                         </div>
 
                         <div className="flex gap-4 p-3">
                             <PhoneCall className="w-8 h-8 text-red-600 p-auto" />
                             <div>
-                                <h6 className="font-black">Call Us:</h6>
-                                <p> +123-456-7890</p>
+                                <h6 className="font-black">
+                                    {t("contactCallUs")}
+                                </h6>
+
+                                <p>{t("contactPhone")}</p>
                             </div>
                         </div>
                         <div className="w-full h-px bg-gray-400 m-auto"></div>
@@ -154,8 +166,11 @@ export default function Contact() {
                         <div className="flex gap-4 p-3">
                             <Mail className="w-8 h-8 text-red-600 p-auto" />
                             <div>
-                                <h6 className="font-black"> Email Us: </h6>
-                                <p className="mb-2">info@yourchurch.com</p>
+                                <h6 className="font-black">
+                                    {t("contactEmailUs")}
+                                </h6>
+
+                                <p>{t("contactEmail")}</p>
                             </div>
                         </div>
                         <div className="w-full h-px bg-gray-400 m-auto"></div>
@@ -163,15 +178,25 @@ export default function Contact() {
                         <div className="flex gap-4 p-3">
                             <MapPin className="w-8 h-8 text-red-600 p-auto" />
                             <div>
-                                <h6 className="font-black">Visit Us:</h6>
-                                <p className="mb-2">Every last Thursday</p>
-                                <p className="mb-2">Simidjola studio, Yenewa</p>
+                                <h6 className="font-black">
+                                    {t("contactVisitUs")}
+                                </h6>
+
+                                <p className="mb-2">
+                                    {t("contactVisitDay")}
+                                </p>
+
+                                <p className="mb-2">
+                                    {t("contactVisitLocation")}
+                                </p>
                             </div>
                         </div>
 
                         <div className="text-center flex justify-center gap-5 mt-5">
                             <div className="lg:w-30 w-15 h-px bg-gray-400 m-auto"></div>
-                            <h4 className="text-xl font-bold text-red-600 mb-2">Follow Us</h4>
+                            <h4 className="text-xl font-bold text-red-600 mb-2">
+                                {t("contactFollowUs")}
+                            </h4>
                             <div className="lg:w-30 w-15 h-px bg-gray-400 m-auto"></div>
                         </div>
 
@@ -196,17 +221,23 @@ export default function Contact() {
                                             fillRule="evenodd"
                                             clipRule="evenodd"
                                             d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z" fill="white"></path> </g></svg>
-                                <p className="font-black">Facebook</p>
+                                <p className="font-black">
+                                    {t("contactFacebook")}
+                                </p>
                             </a>
 
                             <a className="text-center place-items-center">
                                 <svg width="68" height="68" viewBox="-12.72 -12.72 49.44 49.44" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0" transform="translate(3.120000000000001,3.120000000000001), scale(0.74)"><rect x="-12.72" y="-12.72" width="49.44" height="49.44" rx="24.72" fill="#ffffff" strokeWidth="0"></rect></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.8217 5.1344C16.0886 4.29394 15.6479 3.19805 15.6479 2H14.7293M16.8217 5.1344C17.4898 5.90063 18.3944 6.45788 19.4245 6.67608C19.7446 6.74574 20.0786 6.78293 20.4266 6.78293V10.2191C18.645 10.2191 16.9932 9.64801 15.6477 8.68211V15.6707C15.6477 19.1627 12.8082 22 9.32386 22C7.50043 22 5.85334 21.2198 4.69806 19.98C3.64486 18.847 2.99994 17.3331 2.99994 15.6707C2.99994 12.2298 5.75592 9.42509 9.17073 9.35079M16.8217 5.1344C16.8039 5.12276 16.7861 5.11101 16.7684 5.09914M6.9855 17.3517C6.64217 16.8781 6.43802 16.2977 6.43802 15.6661C6.43802 14.0734 7.73249 12.7778 9.32394 12.7778C9.62087 12.7778 9.9085 12.8288 10.1776 12.9124V9.40192C9.89921 9.36473 9.61622 9.34149 9.32394 9.34149C9.27287 9.34149 8.86177 9.36884 8.81073 9.36884M14.7244 2H12.2097L12.2051 15.7775C12.1494 17.3192 10.8781 18.5591 9.32386 18.5591C8.35878 18.5591 7.50971 18.0808 6.98079 17.3564" stroke="#000000" strokeLinejoin="round"></path> </g></svg>
-                                <p className="font-black">tiktock</p>
+                                <p className="font-black">
+                                    {t("contactTiktok")}
+                                </p>
                             </a>
 
                             <a href='https://youtube.com/@godlifenetworkintl?si=uZbN94EzlnbOsHLS' target="_blank" rel="noopener noreferrer" className="text-center place-items-center">
                                 <svg width="68" height="68" viewBox="0 0 48.00 48.00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Youtube-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="Color-" transform="translate(-200.000000, -368.000000)" fill="#CE1312"> <path d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z" id="Youtube"> </path> </g> </g> </g></svg>
-                                <p className="font-black">Youtube</p>
+                                <p className="font-black">
+                                    {t("contactYoutube")}
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -215,15 +246,17 @@ export default function Contact() {
                     <div className="p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg shadow-lg shadow-[#e7e7e8]">
                         <div className="text-center flex justify-center gap-2">
                             <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
-                            <h3 className="lg:text-2xl text-lg text-red-600 font-bold mb-4 ">Send Us a Message</h3>
+                            <h3 className="lg:text-2xl text-lg text-red-600 font-bold mb-4">
+                                {t("contactFormTitle")}
+                            </h3>
                             <div className="lg:w-30 w-20 h-px bg-gray-400 m-auto"></div>
                         </div>
 
                         <form className="space-y-4" onSubmit={handleSubmit}>
                             <input
                                 type="text"
-                                name="name" j
-                                placeholder="Your Name"
+                                name="name"
+                                placeholder={t("contactNamePlaceholder")}
                                 value={formData.name}
                                 onChange={handleChange}
                                 className="w-full border p-2 rounded border-red-600 bg-white text-black"
@@ -232,7 +265,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 name="email"
-                                placeholder="Your Email"
+                                placeholder={t("contactEmailPlaceholder")}
                                 value={formData.email}
                                 onChange={handleChange}
                                 className="w-full border p-2 rounded border-red-600 bg-white text-black"
@@ -323,7 +356,7 @@ export default function Contact() {
                                 <input
                                     type="tel"
                                     name="phone"
-                                    placeholder="812 345 6789"
+                                    placeholder={t("contactPhonePlaceholder")}
                                     value={formData.phone}
                                     onChange={handleChange}
                                     className="flex-1 border w-29 p-2 rounded border-red-600 bg-white text-black"
@@ -332,14 +365,14 @@ export default function Contact() {
                             <input
                                 type="text"
                                 name="subject"
-                                placeholder="Subject"
+                                placeholder={t("contactSubjectPlaceholder")}
                                 value={formData.subject}
                                 onChange={handleChange}
                                 className="w-full border p-2 rounded border-red-600 bg-white text-black"
                             />
                             <textarea
                                 name="message"
-                                placeholder="Your Message"
+                                placeholder={t("contactMessagePlaceholder")}
                                 value={formData.message}
                                 onChange={handleChange}
                                 className="w-full border p-2 rounded border-red-600 bg-white text-black h-32"
@@ -347,9 +380,10 @@ export default function Contact() {
                             ></textarea>
                             <button
                                 type="submit"
-                                className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
+                                disabled={loading}
+                                className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition disabled:opacity-50"
                             >
-                                Send Message
+                                {loading ? "Sending..." : t("contactSendButton")}
                             </button>
 
                             {/* ✅ Success/Error messages */}
@@ -375,25 +409,33 @@ export default function Contact() {
                             "url('https://i.pinimg.com/736x/e4/47/fd/e447fd19010d6f10fb74a0e5ac4179c4.jpg')",
                     }}
                 >
-                    <h3 className="text-4xl text-black font-bold mb-4">Join Us in Prayer</h3>
-                    <p className="mb-4 text-white">Let us know how we can pray for you</p>
+                    <h3 className="text-4xl text-black font-bold mb-4">
+                        {t("prayerSectionTitle")}
+                    </h3>
+
+                    <p className="mb-4 text-white">
+                        {t("prayerSectionSubtitle")}
+                    </p>
+
                     <button
                         onClick={() => setShowModal(true)}
                         className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition"
                     >
-                        Submit Prayer Request
+                        {t("prayerRequestButton")}
                     </button>
 
                     {/* Floating Modal */}
                     {showModal && (
                         <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
                             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-                                <h3 className="text-xl text-gray-600 font-semibold mb-4">Prayer Request</h3>
+                                <h3 className="text-xl text-gray-600 font-semibold mb-4">
+                                    {t("prayerModalTitle")}
+                                </h3>
                                 <form className="space-y-4" onSubmit={handleSubmit2}>
                                     <input
                                         type="email"
                                         name="email"
-                                        placeholder="Your Email"
+                                        placeholder={t("prayerEmailPlaceholder")}
                                         value={formData2.email}
                                         onChange={handleChange2}
                                         className="w-full border p-2 rounded bg-white text-black"
@@ -483,7 +525,7 @@ export default function Contact() {
                                         <input
                                             type="tel"
                                             name="phone"
-                                            placeholder="812 345 6789"
+                                            placeholder={t("prayerPhonePlaceholder")}
                                             value={formData2.phone}
                                             onChange={handleChange2}
                                             required
@@ -492,7 +534,7 @@ export default function Contact() {
                                     </div>
                                     <textarea
                                         name="message"
-                                        placeholder="Write your prayer request..."
+                                        placeholder={t("prayerMessagePlaceholder")}
                                         value={formData2.message}
                                         onChange={handleChange2}
                                         className="w-full border p-2 rounded h-32  text-black"
@@ -502,7 +544,7 @@ export default function Contact() {
                                         type="submit"
                                         className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition w-full"
                                     >
-                                        Send Request
+                                        {t("prayerSendButton")}
                                     </button>
                                 </form>
 
@@ -519,7 +561,7 @@ export default function Contact() {
                                     onClick={() => setShowModal(false)}
                                     className="mt-4 text-gray-600 hover:text-black"
                                 >
-                                    Close
+                                    {t("prayerCloseButton")}
                                 </button>
                             </div>
                         </div>

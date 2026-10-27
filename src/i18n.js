@@ -319,6 +319,57 @@ i18n.use(initReactI18next).init({
             video: "https://youtu.be/B7Ijvi0JaYc?si=0ZfIWL07NFnydXyN",
           },
         ],
+
+        contactHeroTitle: "Contact Us",
+        contactHeroSubtitle: "We'd love to hear from you!",
+
+        contactGetInTouch: "Get In Touch",
+
+        contactCallUs: "Call Us:",
+        contactPhone: "+123-456-7890",
+
+        contactEmailUs: "Email Us:",
+        contactEmail: "godlifenetworkintl@gmail.com",
+
+        contactVisitUs: "Visit Us:",
+        contactVisitDay: "Every last Thursday",
+        contactVisitLocation: "Simidjola Studio, Yenewa",
+
+        contactFollowUs: "Follow Us",
+
+        contactFacebook: "Facebook",
+        contactTiktok: "TikTok",
+        contactYoutube: "YouTube",
+
+        contactFormTitle: "Send Us a Message",
+
+        contactNamePlaceholder: "Your Name",
+        contactEmailPlaceholder: "Your Email",
+        contactPhonePlaceholder: "812 345 6789",
+        contactSubjectPlaceholder: "Subject",
+        contactMessagePlaceholder: "Your Message",
+
+        contactSendButton: "Send Message",
+
+        contactSuccessMessage: "✅ Message sent successfully!",
+        contactErrorMessage: "❌ Failed to send message. Please try again.",
+
+        prayerSectionTitle: "Join Us in Prayer",
+        prayerSectionSubtitle: "Let us know how we can pray for you",
+        prayerRequestButton: "Submit Prayer Request",
+
+        prayerModalTitle: "Prayer Request",
+
+        prayerEmailPlaceholder: "Your Email",
+        prayerPhonePlaceholder: "812 345 6789",
+        prayerMessagePlaceholder: "Write your prayer request...",
+
+        prayerSendButton: "Send Request",
+        prayerCloseButton: "Close",
+
+        prayerSuccessMessage: "✅ Prayer request sent successfully!",
+        prayerErrorMessage:
+          "❌ Failed to send prayer request. Please try again.",
       },
     },
 
@@ -642,6 +693,59 @@ i18n.use(initReactI18next).init({
             video: "https://youtu.be/B7Ijvi0JaYc?si=0ZfIWL07NFnydXyN",
           },
         ],
+
+        contactHeroTitle: "Contactez-Nous",
+        contactHeroSubtitle: "Nous serions ravis d'avoir de vos nouvelles !",
+
+        contactGetInTouch: "Entrer en Contact",
+
+        contactCallUs: "Appelez-nous :",
+        contactPhone: "+123-456-7890",
+
+        contactEmailUs: "Envoyez-nous un e-mail :",
+        contactEmail: "godlifenetworkintl@gmail.com",
+
+        contactVisitUs: "Rendez-nous visite :",
+        contactVisitDay: "Chaque dernier jeudi du mois",
+        contactVisitLocation: "Studio Simidjola, Yenewa",
+
+        contactFollowUs: "Suivez-nous",
+
+        contactFacebook: "Facebook",
+        contactTiktok: "TikTok",
+        contactYoutube: "YouTube",
+
+        contactFormTitle: "Envoyez-nous un Message",
+
+        contactNamePlaceholder: "Votre Nom",
+        contactEmailPlaceholder: "Votre E-mail",
+        contactPhonePlaceholder: "812 345 6789",
+        contactSubjectPlaceholder: "Sujet",
+        contactMessagePlaceholder: "Votre Message",
+
+        contactSendButton: "Envoyer le Message",
+
+        contactSuccessMessage: "✅ Message envoyé avec succès !",
+        contactErrorMessage:
+          "❌ Échec de l'envoi du message. Veuillez réessayer.",
+
+        prayerSectionTitle: "Joignez-Vous à Nous dans la Prière",
+        prayerSectionSubtitle:
+          "Faites-nous savoir comment nous pouvons prier pour vous",
+        prayerRequestButton: "Soumettre une Requête de Prière",
+
+        prayerModalTitle: "Requête de Prière",
+
+        prayerEmailPlaceholder: "Votre E-mail",
+        prayerPhonePlaceholder: "812 345 6789",
+        prayerMessagePlaceholder: "Écrivez votre sujet de prière...",
+
+        prayerSendButton: "Envoyer la Requête",
+        prayerCloseButton: "Fermer",
+
+        prayerSuccessMessage: "✅ Requête de prière envoyée avec succès !",
+        prayerErrorMessage:
+          "❌ Échec de l'envoi de la requête de prière. Veuillez réessayer.",
       },
     },
   },

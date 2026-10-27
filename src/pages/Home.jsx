@@ -42,13 +42,13 @@ export default function Home() {
                     <div>
                         <img
                             className="w-ful shadow-lg shadow-red-600 from-red-400 via-yellow-400 "
-                            src="https://scontent.fcoo2-2.fna.fbcdn.net/v/t39.30808-6/817329473_122304146540203666_9210632606273483348_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHjvUZGMX-xaKlxVW-VBth3L9zJF_M86yYv3MkX8zzrJvlWGQ5N45lieljRaWnNpS_HkNG5w-kJxXe4ppq6GHFh&_nc_ohc=j0ky683Oi1gQ7kNvwGfBH6m&_nc_oc=AdqjhR3XB4BqgPTYo8qU2eJAxzy_qFbEh7zcxJ243WYq_3S_tMqWoApa7qEjbVtNZlc&_nc_zt=23&_nc_ht=scontent.fcoo2-2.fna&_nc_gid=ODocZ99iZa6yw6Y_R8HX8A&_nc_ss=7b2a8&oh=00_AQNBb9AL8k5wolnZfa7yL8NHD28QQMFnzHpQzIT1DaG7EQ&oe=6AD88FDA" alt="homologeo image" />
+                            src="/homologeo-e.png" alt="English homologeo image" />
                     </div>
 
                     <div>
                         <img
                             className="w-ful shadow-lg shadow-red-600 from-red-400 via-yellow-400 "
-                            src="https://scontent.fcoo2-1.fna.fbcdn.net/v/t39.30808-6/816394331_122304146624203666_4345671479326021329_n.jpg?stp=dst-jpg_tt6&cstp=mx940x788&ctp=s940x788&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEF3RfPpjewIV0kb93l_LPdPVY7SvE6Els9VjtK8ToSW918jqKD0L9qUUJQyyCsykaHA5tq_YSV1xHxC3n26RJA&_nc_ohc=kMp4H26G4_wQ7kNvwGuBmBu&_nc_oc=AdqTTaRtvcVVptvwZqYRdzQOV1JItr9noS6mCt3qiSps6zDCtwq_qlHFoUz0Yn1UeNQ&_nc_zt=23&_nc_ht=scontent.fcoo2-1.fna&_nc_gid=EWbc3fmmVHxp-uhZ02UtKA&_nc_ss=7b2a8&oh=00_AQNzUVuwh9HBNAtbuy6xrZJeIgmgdN4JHo5QZysReys0FA&oe=6AD89B90" alt="homologeo image" />
+                            src="/homologeo-f.png" alt="French homologeo image" />
                     </div>
                 </div>
 
