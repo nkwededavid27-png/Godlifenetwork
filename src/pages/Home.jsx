@@ -57,13 +57,13 @@ export default function Home() {
                 <div className="pt-5 md:hidden lg:hidden carousel rounded-box w-full shadow-lg h-100 shadow-red-600 from-red-400 via-yellow-400">
                     <div className="carousel-item w-full">
                         <img
-                            src="/homologeo-e.png"
+                            src="/homologeo-em.png"
                             className="w-full"
                             alt="English homologeo image" />
                     </div>
                     <div className="carousel-item w-full">
                         <img
-                            src="/homologeo-f.png"
+                            src="/homologeo-fm.png"
                             className="w-full"
                             alt="French homologeo image" />
                     </div>

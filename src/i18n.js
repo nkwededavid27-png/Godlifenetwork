@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
         heroSubtitle1: "Nourished by the Word of His Grace — Acts 20:32",
         joinButton1: "View blog page for sermon",
 
-        heroTitle2: "Welcome Godlife Network",
+        heroTitle2: "Welcome to Godlife Network",
         heroSubtitle2: "Experience worship, fellowship, and growth together.",
         joinButton2: "Join our WhatsApp community",
 
@@ -29,7 +29,7 @@ i18n.use(initReactI18next).init({
         Dhomologeo: "Daily homologeo",
         slideRight: "Slide to view translations",
         homeabout:
-          "GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God....",
+          `GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God...."`,
 
         welcomeHome: "Welcome Home",
         welcomeTitle: "Welcome to ",
@@ -400,7 +400,7 @@ i18n.use(initReactI18next).init({
         Dhomologeo: "Homologéo Quotidien",
         slideRight: "Glissez pour voir la traductions ",
         homeabout:
-          "GodLife Network International est une communauté chrétienne où les croyants qui ont reçu la vie du Christ se réunissent dans l'amour pour communier les uns avec les autres et avec l'Esprit de Dieu....",
+          `GodLife Network International est une communauté chrétienne où les croyants qui ont reçu la vie du Christ se réunissent dans l'amour pour communier les uns avec les autres et avec l'Esprit de Dieu...."`,
 
         welcomeHome: "Bienvenue à la maison",
         welcomeTitle: "Bienvenue sur ",
