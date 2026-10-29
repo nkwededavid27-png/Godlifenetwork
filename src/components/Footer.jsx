@@ -64,7 +64,7 @@ export default function Footer() {
                         alt="GLN Logo"
                         className="w-30 h-30"
                     />
-                    <p className="font-serif w-85 md:w-100 m-2">
+                    <p className="font-serif w-75 md:w-100 ">
                         GodLife Network Int.
                         <br />
                         {t("footerDescription")}
