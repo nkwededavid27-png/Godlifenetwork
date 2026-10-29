@@ -45,7 +45,7 @@ export default function About() {
 
 
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-10 pt-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-5 pt-20">
                 {/* Left Column - Text */}
                 <div>
                     <h2 className="text-3xl font-display font-bold text-red-600 mb-6">
@@ -126,7 +126,7 @@ export default function About() {
                 {/* Right Column - Image */}
                 <div className="relative h-150 overflow-hidden">
                     <img
-                        src="/IMG_2970.jpg"
+                        src="/IMG_2849.jpg"
                         alt="The GLN community gathering for worship and fellowship"
                         className="object-cover absolute inset-0 w-full h-full  border-red-600 shadow-xl shadow-red-600 rounded-2xl m-auto"
                     />
