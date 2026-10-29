@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Godlifelogo from "../assets/godlife-logo.png";
+import Godlifelogo from "../assets/Godlife-logo.png";
 
 
 export default function Footer() {
