@@ -57,14 +57,14 @@ export default function Footer() {
     };
     return (
         <footer>
-            <div className="footer md:footer-horizontal gap-5 text-base-content p-5 ">
+            <div className="footer md:footer-horizontal gap-5 text-base-content p-3 ">
                 <aside>
                     <img
                         src={Godlifelogo}
                         alt="GLN Logo"
                         className="w-30 h-30"
                     />
-                    <p className="font-serif w-85 md:w-100">
+                    <p className="font-serif w-85 md:w-100 m-2">
                         GodLife Network Int.
                         <br />
                         {t("footerDescription")}
