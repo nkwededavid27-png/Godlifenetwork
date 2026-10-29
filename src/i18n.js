@@ -28,8 +28,7 @@ i18n.use(initReactI18next).init({
 
         Dhomologeo: "Daily homologeo",
         slideRight: "Slide to view translations",
-        homeabout:
-          `GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God...."`,
+        homeabout: `GodLife Network International is a Christian community where believers who have received the life of Christ come together in love to fellowship with one another and with the Spirit of God...."`,
 
         welcomeHome: "Welcome Home",
         welcomeTitle: "Welcome to ",
@@ -371,6 +370,49 @@ i18n.use(initReactI18next).init({
         prayerSuccessMessage: "✅ Prayer request sent successfully!",
         prayerErrorMessage:
           "❌ Failed to send prayer request. Please try again.",
+
+        floating: {
+          message1:
+            "Matthew 11:28 “Come to Me, all you who labour and are heavy laden, and I will give you rest.”",
+          message2:
+            "1 Thessalonians 2:11-12 “For you know that we dealt with each of you as a father deals with his own children, encouraging, comforting and urging you to live lives worthy of God, who calls you into his kingdom and glory.",
+          message3:
+            "Philippians 1:6 “…being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus.”",
+          message4:
+            "Psalm 37:23-24 “The LORD makes firm the steps of the one who delights in him; though he may stumble, he will not fall, for the LORD upholds him with his hand.”",
+          message5:
+            "Hebrews 10:24-25 “And let us consider how we may spur one another on toward love and good deeds, not giving up meeting together, as some are in the habit of doing, but encouraging one another—and all the more as you see the Day approaching.”",
+          message6: "Philippians 4:13 - I can do all things through Christ.",
+
+          message7: "Isaiah 41:10 - Do not fear, for I am with you.",
+
+          message8: "Joshua 1:9 - Be strong and courageous.",
+
+          message9:
+            "Luke 12:32 “Do not be afraid, little flock, for your Father has been pleased to give you the kingdom.”",
+
+          message10: "1 Peter 5:7 - Cast all your cares on Him.",
+
+          message11: "Proverbs 3:5 - Trust in the Lord with all your heart.",
+
+          message12: "Jeremiah 29:11 - I know the plans I have for you.",
+
+          message13: "Romans 8:28 - God works all things for good.",
+
+          message14: "2 Corinthians 5:17 - In Christ, you are a new creation.",
+
+          message15: "Hebrews 13:5 - I will never leave you nor forsake you.",
+
+          message16: "Psalm 34:8 - Taste and see that the Lord is good.",
+
+          message17: "Matthew 19:26 - With God all things are possible.",
+
+          message18: "Galatians 2:20 - Christ lives in me.",
+
+          message19: "John 8:12 - I am the light of the world.",
+
+          message20: "Revelation 3:20 - I stand at the door and knock.",
+        },
       },
     },
 
@@ -400,8 +442,7 @@ i18n.use(initReactI18next).init({
 
         Dhomologeo: "Homologéo Quotidien",
         slideRight: "Glissez pour voir la traductions ",
-        homeabout:
-          `GodLife Network International est une communauté chrétienne où les croyants qui ont reçu la vie du Christ se réunissent dans l'amour pour communier les uns avec les autres et avec l'Esprit de Dieu...."`,
+        homeabout: `GodLife Network International est une communauté chrétienne où les croyants qui ont reçu la vie du Christ se réunissent dans l'amour pour communier les uns avec les autres et avec l'Esprit de Dieu...."`,
 
         welcomeHome: "Bienvenue à la maison",
         welcomeTitle: "Bienvenue sur ",
@@ -748,6 +789,63 @@ i18n.use(initReactI18next).init({
         prayerSuccessMessage: "✅ Requête de prière envoyée avec succès !",
         prayerErrorMessage:
           "❌ Échec de l'envoi de la requête de prière. Veuillez réessayer.",
+
+        floating: {
+          message1:
+            "Matthieu 11:28 « Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos. »",
+
+          message2:
+            "1 Thessaloniciens 2:11-12 « Vous savez aussi que nous avons été pour chacun de vous ce qu’un père est pour ses enfants, vous exhortant, vous consolant et vous encourageant à marcher d’une manière digne de Dieu. »",
+
+          message3:
+            "Philippiens 1:6 « Celui qui a commencé en vous cette bonne œuvre la rendra parfaite pour le jour de Jésus-Christ. »",
+
+          message4:
+            "Psaume 37:23-24 « L'Éternel affermit les pas de l'homme, et il prend plaisir à sa voie. S'il tombe, il n'est pas terrassé, car l'Éternel lui prend la main. »",
+
+          message5:
+            "Hébreux 10:24-25 « Veillons les uns sur les autres pour nous inciter à l'amour et aux bonnes œuvres, sans abandonner notre assemblée. »",
+
+          message6:
+            "Philippiens 4:13 « Je puis tout par celui qui me fortifie. »",
+
+          message7: "Ésaïe 41:10 « Ne crains rien, car je suis avec toi. »",
+
+          message8: "Josué 1:9 « Fortifie-toi et prends courage. »",
+
+          message9:
+            "Luc 12:32 « Ne crains point, petit troupeau, car votre Père a trouvé bon de vous donner le royaume. »",
+
+          message10:
+            "1 Pierre 5:7 « Déchargez-vous sur lui de tous vos soucis, car lui-même prend soin de vous. »",
+
+          message11:
+            "Proverbes 3:5 « Confie-toi en l'Éternel de tout ton cœur. »",
+
+          message12:
+            "Jérémie 29:11 « Car je connais les projets que j'ai formés sur vous. »",
+
+          message13:
+            "Romains 8:28 « Toutes choses concourent au bien de ceux qui aiment Dieu. »",
+
+          message14:
+            "2 Corinthiens 5:17 « Si quelqu'un est en Christ, il est une nouvelle créature. »",
+
+          message15:
+            "Hébreux 13:5 « Je ne te délaisserai point, et je ne t'abandonnerai point. »",
+
+          message16:
+            "Psaume 34:8 « Goûtez et voyez combien l'Éternel est bon. »",
+
+          message17: "Matthieu 19:26 « À Dieu tout est possible. »",
+
+          message18: "Galates 2:20 « Christ vit en moi. »",
+
+          message19: "Jean 8:12 « Je suis la lumière du monde. »",
+
+          message20:
+            "Apocalypse 3:20 « Voici, je me tiens à la porte, et je frappe. »",
+        },
       },
     },
   },

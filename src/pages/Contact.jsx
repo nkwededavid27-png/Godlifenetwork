@@ -124,7 +124,7 @@ export default function Contact() {
             <div className=" w-full">
                 {/* Header Banner */}
                 <div
-                    className="relative h-120 bg-cover bg-center flex flex-col justify-center items-center text-white"
+                    className="relative h-120 bg-cover bg-center flex flex-col justify-center items-center text-white border-red-600 shadow-lg shadow-red-600"
                     style={{
                         backgroundImage:
                             "url('https://i.pinimg.com/1200x/4f/a2/aa/4fa2aae3f69c3c53cc1dbf72237f3f5b.jpg')",

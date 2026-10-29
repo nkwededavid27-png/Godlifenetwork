@@ -10,7 +10,7 @@ export default function PerfectLove() {
         <div>
             {/* Header Banner */}
             <div
-                className="relative h-[60vh] bg-cover bg-center flex flex-col justify-center items-center  text-white 
+                className="relative h-[60vh] bg-cover bg-center flex flex-col justify-center items-center border-red-600 shadow-lg shadow-red-600 text-white 
                             bg-[url('/perfectlove-cover.png')]
                             lg:bg-[url('/PLBanner-tablet.png')]
                             md:bg-[url('/PLBanner-laptop.png')]"

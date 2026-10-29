@@ -6,7 +6,7 @@ export default function Event() {
     return (
         <main className="min-h-screen ">
             {/* Hero Section */}
-            <section className="relative overflow-hidden bg-linear-to-r from-red-500 via-pink-500 to-orange-500 text-white flex items-center pt-32 pb-16 md:pt-40 md:pb-24 min-h-[50vh]">
+            <section className="relative overflow-hidden bg-linear-to-r from-red-500 via-pink-500 to-orange-500 text-white flex items-center pt-32 pb-16 md:pt-40 md:pb-24 min-h-[50vh]border-red-600 shadow-lg shadow-red-600">
                 <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
                 <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
