@@ -139,7 +139,7 @@ export default function Event() {
                             </div>
                         </div>
 
-                        <div className="group relative overflow-hidden  transition-all duration-300 flex flex-col h-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg  hover:bg-white/10  group w-full   shadow-lg shadow-[#e7e7e8] ">
+                        <div className="group  relative overflow-hidden  transition-all duration-300 flex flex-col h-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg  hover:bg-white/10  group w-full   shadow-lg shadow-[#e7e7e8] ">
                             <div className="h-2 w-full relative overflow-hidden bg-green-500">
                                 <div className="absolute inset-0 opacity-50 group-hover:opacity-0 transition-opacity duration-300 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.4)_0px,rgba(255,255,255,0.4)_8px,transparent_8px,transparent_24px)]"></div>
                             </div>

@@ -134,7 +134,7 @@ export default function Contact() {
                         {t("contactHeroTitle")}
                     </h2>
 
-                    <p className="text-lg text-black font-serif mt-2">
+                    <p className="text-lg text-black  font-serif mt-2">
                         {t("contactHeroSubtitle")}
                     </p>
                 </div>
@@ -159,6 +159,7 @@ export default function Contact() {
                                 </h6>
 
                                 <p>{t("contactPhone")}</p>
+                                <p>{t("contactPhone2")}</p>
                             </div>
                         </div>
                         <div className="w-full h-px bg-gray-400 m-auto"></div>

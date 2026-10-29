@@ -171,8 +171,8 @@ i18n.use(initReactI18next).init({
 
         leaderTitle: "Our Leader",
         leaderSubtitle:
-          "Meet the dedicated leader who guide our church community",
-        leaderName: "Apostle Ifeanyi Ewim",
+          "Meet the dedicated leader who guide our spirital community",
+        leaderName: "Ifeanyi Ewim",
         leaderRole: "Lead Pastor and Apostolic Head of The GodLife Network",
 
         upcomingEventsTitle1: "Upcoming Events",
@@ -326,7 +326,8 @@ i18n.use(initReactI18next).init({
         contactGetInTouch: "Get In Touch",
 
         contactCallUs: "Call Us:",
-        contactPhone: "+123-456-7890",
+        contactPhone: "+229 01 56 78 42 87",
+        contactPhone2: "+229 01 56 31 66 06",
 
         contactEmailUs: "Email Us:",
         contactEmail: "godlifenetworkintl@gmail.com",
@@ -542,8 +543,8 @@ i18n.use(initReactI18next).init({
 
         leaderTitle: "Notre Leader",
         leaderSubtitle:
-          "Rencontrez le leader dévoué qui guide notre communauté d'église",
-        leaderName: "Apôtre Ifeanyi Ewim",
+          "Rencontrez le leader dévoué qui guide notre communauté spirituelle",
+        leaderName: "Ifeanyi Ewim",
         leaderRole: "Pasteur principal et chef apostolique du God Life Network",
 
         upcomingEventsTitle1: "Événements à venir",
@@ -700,7 +701,8 @@ i18n.use(initReactI18next).init({
         contactGetInTouch: "Entrer en Contact",
 
         contactCallUs: "Appelez-nous :",
-        contactPhone: "+123-456-7890",
+        contactPhone: "+229 01 56 78 42 87",
+        contactPhone2: "+229 01 56 31 66 06",
 
         contactEmailUs: "Envoyez-nous un e-mail :",
         contactEmail: "godlifenetworkintl@gmail.com",

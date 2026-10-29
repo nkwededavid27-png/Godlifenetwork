@@ -66,7 +66,7 @@ export default function Media() {
 
       {/* HERO */}
       <section
-        className="relative h-[70vh] flex items-center justify-center p-5"
+        className="relative h-[60vh]  flex items-center justify-center p-5"
         style={{
           backgroundImage: "url('/Join-hero1.jpeg')",
           backgroundSize: "cover",

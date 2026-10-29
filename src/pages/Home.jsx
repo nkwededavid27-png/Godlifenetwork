@@ -38,7 +38,7 @@ export default function Home() {
                 <h1 className="text-black uppercase p-3 lg:p-15 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black ">{t("Dhomologeo")}</h1>
                 <p className=" md:hidden lg:hidden text-lg p-4 text-gray-600 ">{t("slideRight")}</p>
                 {/**Laptop homologeo */}
-                <div className="hidden lg:grid  md:grid md:grid-cols-1 lg:grid-cols-2 p-5 gap-5">
+                <div className="hidden  lg:grid  md:grid md:grid-cols-1 lg:grid-cols-2 p-5 gap-5">
                     <div>
                         <img
                             className="w-ful shadow-lg shadow-red-600 from-red-400 via-yellow-400 "
@@ -186,7 +186,7 @@ export default function Home() {
 
                         <div>
                             <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
-                                <a href="">{t("followFacebookBtn")}</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://web.facebook.com/profile.php?id=61556110006448">{t("followFacebookBtn")}</a>
                             </button>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ export default function Home() {
 
                         <div>
                             <button className="font-display font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-flex items-center justify-center gap-2 tracking-wide bg-red- text-white hover:shadow-red-glow focus:ring-primary transform hover:scale-105 active:scale-95 disabled:grayscale disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none px-10 py-5 text-xl">
-                                <a href="">{t("followFacebookBtn")}</a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://web.facebook.com/profile.php?id=61556110006448">{t("followFacebookBtn")}</a>
                             </button>
                         </div>
                     </div>

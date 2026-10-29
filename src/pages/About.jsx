@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import pastorimg from '../assets/pastorimg.png'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import aboutsideimg from '../assets/about-side-img.jpg'
+
 
 
 
@@ -11,7 +11,7 @@ export default function About() {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <section className="relative h-150 sm:h-150 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600">
+            <section className="relative h-[60vh]  md:h-screen lg:h-screen  overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600">
                 <div className="absolute inset-0">
                     <img
                         alt="Banner 2"
@@ -126,7 +126,7 @@ export default function About() {
                 {/* Right Column - Image */}
                 <div className="relative h-150 overflow-hidden">
                     <img
-                        src={aboutsideimg}
+                        src="/IMG_2970.jpg"
                         alt="The GLN community gathering for worship and fellowship"
                         className="object-cover absolute inset-0 w-full h-full  border-red-600 shadow-xl shadow-red-600 rounded-2xl m-auto"
                     />
@@ -143,29 +143,10 @@ export default function About() {
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 pb-20 gap-8">
-                    {/* Mission */}
-                    <div className="bg-white p-8 shadow-lg rounded-lg">
-                        <img
-                            src="https://i.pinimg.com/1200x/4b/7a/91/4b7a910939f7bcb69b067bea6eac666e.jpg"
-                            alt="joyours image"
-                            className="w-full mb-5"
-                            style={{
-                                borderRadius: "52% 48% 92% 8% / 40% 68% 32% 60% "
-                            }}
-                        />
-                        
-                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
-                            {t("missionTitle")}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            {t("missionText")}
-                        </p>
-                    </div>
-
                     {/* Vision */}
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <img
-                            src="https://i.pinimg.com/1200x/b1/87/25/b187253f61a5f02df0e46c8e89887ba9.jpg"
+                            src="/IMG_2787.jpg"
                             alt="joyours image"
                             className="w-full mb-5"
                             style={{
@@ -180,6 +161,27 @@ export default function About() {
                             {t("visionText")}
                         </p>
                     </div>
+
+                    {/* Mission */}
+                    <div className="bg-white p-8 shadow-lg rounded-lg">
+                        <img
+                            src="/IMG_2821.jpg"
+                            alt="joyours image"
+                            className="w-full mb-5"
+                            style={{
+                                borderRadius: "52% 48% 92% 8% / 40% 68% 32% 60% "
+                            }}
+                        />
+
+                        <h3 className="text-2xl font-display font-semibold text-primary mb-4">
+                            {t("missionTitle")}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed">
+                            {t("missionText")}
+                        </p>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -199,7 +201,7 @@ export default function About() {
                     {/* Mission */}
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <img
-                            src="https://i.pinimg.com/1200x/ce/67/1f/ce671f1a983d36caea246324e250f843.jpg"
+                            src="/IMG_2662.jpg"
                             alt="joyours image"
                             className="w-full mb-5"
                             style={{
@@ -237,7 +239,7 @@ export default function About() {
                     {/* Vision */}
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <img
-                            src="https://i.pinimg.com/736x/d2/c0/3d/d2c03d2a181f7990f7d74673f59cf20f.jpg"
+                            src="/IMG_2632.jpg"
                             alt="joyours image"
                             className="w-full mb-5"
                             style={{
@@ -256,7 +258,7 @@ export default function About() {
                     {/* Vision */}
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <img
-                            src="https://i.pinimg.com/1200x/6c/a5/16/6ca516671457942801da2af8db10fb70.jpg"
+                            src="/IMG_2706.jpg"
                             alt="joyours image"
                             className="w-full mb-5"
                             style={{

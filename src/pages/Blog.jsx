@@ -8,7 +8,7 @@ export default function BlogSection() {
     const { t, } = useTranslation();
     return (
         <>
-            <section className="relative h-screen overflow-hidden bg-black">
+            <section className="relative h-[60vh]   md:h-screen lg:h-screen overflow-hidden bg-black">
                 <div className="absolute inset-0">
                     <img
                         alt="Banner 2"
