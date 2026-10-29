@@ -137,9 +137,6 @@ export default function Footer() {
                         </a>
 
                         <a href='https://youtube.com/@godlifenetworkintl?si=uZbN94EzlnbOsHLS' target="_blank" rel="noopener noreferrer" className="text-center place-items-center">
-
-
-
                             <svg
                                 width="50px"
                                 height="50px"
