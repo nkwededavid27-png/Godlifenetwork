@@ -413,6 +413,22 @@ i18n.use(initReactI18next).init({
 
           message20: "Revelation 3:20 - I stand at the door and knock.",
         },
+
+        footerDescription:
+          "Connecting people with the life-changing power of God's love through the gospel of grace and faith in Christ Jesus.",
+
+        footerQuickLinks: "Quick Links",
+
+        footerHome: "Home",
+        footerAbout: "About",
+        footerEvents: "Events",
+        footerBlog: "Blog",
+        footerMedia: "Media",
+        footerContact: "Contact",
+
+        footerFollowUs: "Follow Us On Our Socials",
+
+        footerCopyright: "GodLife Network International. All Rights Reserved.",
       },
     },
 
@@ -846,6 +862,22 @@ i18n.use(initReactI18next).init({
           message20:
             "Apocalypse 3:20 « Voici, je me tiens à la porte, et je frappe. »",
         },
+
+        footerDescription:
+          "Connecter les personnes à la puissance transformatrice de l'amour de Dieu à travers l'Évangile de la grâce et la foi en Jésus-Christ.",
+
+        footerQuickLinks: "Liens Rapides",
+
+        footerHome: "Accueil",
+        footerAbout: "À Propos",
+        footerEvents: "Événements",
+        footerBlog: "Blog",
+        footerMedia: "Médias",
+        footerContact: "Contact",
+
+        footerFollowUs: "Suivez-Nous Sur Nos Réseaux",
+
+        footerCopyright: "GodLife Network International. Tous Droits Réservés.",
       },
     },
   },
