@@ -57,14 +57,14 @@ export default function Footer() {
     };
     return (
         <footer>
-            <div className="footer md:footer-horizontal gap-5 text-base-content p-3 ">
+            <div className="footer md:footer-horizontal gap-5 text-base-content p-3 mt-5">
                 <aside>
                     <img
                         src={Godlifelogo}
                         alt="GLN Logo"
                         className="w-30 h-30"
                     />
-                    <p className="font-serif w-75 md:w-100 ">
+                    <p className="font-serif w-75 md:w-90 ">
                         GodLife Network Int.
                         <br />
                         {t("footerDescription")}
@@ -183,7 +183,7 @@ export default function Footer() {
                                 placeholder={t("prayerMessagePlaceholder")}
                                 value={formData2.message}
                                 onChange={handleChange2}
-                                className="w-full border p-2 rounded h-10  bg-white text-black"
+                                className="w-full border p-2 rounded h-30 md:h-20  bg-white text-black"
                                 required
                             ></textarea>
                             <button
