@@ -66,7 +66,7 @@ function Navmenu() {
                             className="ml-auto lg:mr-auto lg:ml-0">
                             <img
                                 alt="Godlife Network- Alter of Worship"
-                                width={scrolled ? 70 : 110}
+                                width={scrolled ? 70 : 80}
                                 height={40}
                                 className="object-contain  object-right transition-all duration-300 ease-in-out border-2 border-red-600 rounded-2xl"
                                 src={scrolled ? Godlifelogo2 : Godlifelogo}
@@ -210,9 +210,9 @@ function Navmenu() {
                             >
                                 <img
                                     alt="Godlife Network- Alter of Worship"
-                                    width={scrolled ? 70 : 70}
+                                    width={scrolled ? 50 : 50}
                                     height={40}
-                                    className="object-contain m-auto mt-5 transition-all duration-300 ease-in-out border-4 border-red-600 rounded-2xl"
+                                    className="object-contain m-auto mt-5 transition-all duration-300 ease-in-out border-2 border-red-600 rounded-2xl"
                                     src={scrolled ? Godlifelogo2 : Godlifelogo}
                                 />
                                 <div className="flex flex-col items-start p-4 space-y-2 overflow-y-auto">
