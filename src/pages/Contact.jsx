@@ -120,7 +120,7 @@ export default function Contact() {
 
     return (
 
-        <>
+        <div className=" border-red-600 shadow-lg shadow-red-600 ">
             <div className=" w-full">
                 {/* Header Banner */}
                 <div
@@ -573,6 +573,6 @@ export default function Contact() {
 
             </div>
 
-        </>
+        </div>
     );
 }

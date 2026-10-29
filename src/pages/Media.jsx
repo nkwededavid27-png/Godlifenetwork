@@ -53,7 +53,7 @@ export default function Media() {
     setProgress(value);
   };
 
-  
+
   const mediaMessages = t("mediaMessages", {
     returnObjects: true,
   });
@@ -62,7 +62,7 @@ export default function Media() {
 
 
   return (
-    <div className=" min-h-screen">
+    <div className=" min-h-screen  border-red-600 shadow-lg shadow-red-600 ">
 
       {/* HERO */}
       <section

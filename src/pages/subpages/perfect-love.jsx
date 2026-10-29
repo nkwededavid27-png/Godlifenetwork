@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 export default function PerfectLove() {
     const { t, } = useTranslation();
     return (
-        <div>
+        <div className=" border-red-600 shadow-lg shadow-red-600 ">
             {/* Header Banner */}
             <div
                 className="relative h-[60vh] bg-cover bg-center flex flex-col justify-center items-center border-red-600 shadow-lg shadow-red-600 text-white 

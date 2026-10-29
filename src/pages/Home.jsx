@@ -13,7 +13,7 @@ export default function Home() {
     const { t, } = useTranslation();
 
     return (
-        <div>
+        <div className=" border-red-600 shadow-lg shadow-red-600 ">
             <HeroSection />
 
             <div className="text-center pt-20 p-5 lg:p-10  ">
@@ -273,7 +273,7 @@ export default function Home() {
 
 
 
-            <div className="text-center mb-0 pt-20 bg-[#000000] rounded-3xl">
+            <div className="text-center pb-10 pt-20 bg-[#000000] rounded-3xl">
                 {/* Tagline */}
                 <div className="mb-6">
                     <span className="inline-block px-6 py-3 bg-red-200 text-center text-red-600 font-semibold rounded-full text-sm tracking-wide">

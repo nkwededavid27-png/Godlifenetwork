@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 export default function BlogSection() {
     const { t, } = useTranslation();
     return (
-        <>
+        <div className=' border-red-600 shadow-lg shadow-red-600 '>
             <section className="relative h-[60vh]   md:h-screen lg:h-screen overflow-hidden bg-black border-red-600 shadow-lg shadow-red-600">
                 <div className="absolute inset-0">
                     <img
@@ -159,6 +159,6 @@ export default function BlogSection() {
             </section>
 
 
-        </>
+        </div>
     );
 }

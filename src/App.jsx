@@ -11,6 +11,7 @@ import Contact from './pages/Contact'
 import { Suspense } from "react";
 import PerfectLove from './pages/subpages/perfect-love';
 import Media from './pages/Media';
+import Footer from './components/Footer';
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }
