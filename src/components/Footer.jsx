@@ -208,7 +208,7 @@ export default function Footer() {
             </div>
 
             <div className="text-center m-auto p-10">
-                <p className="text-sm">© {new Date().getFullYear()} GodLife Network International. All Rights Reserved.</p>
+                <p className="text-sm">© {new Date().getFullYear()} {t("footerCopyright")}</p>
             </div>
         </footer>
     )
