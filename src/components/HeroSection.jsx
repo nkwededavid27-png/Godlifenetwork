@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 
 
 function HeroSection() {
+    const message = "Hello, I'm charting from Godlife Network Website. I want to join the community and I would like to learn more about Godlife Network.";
+
+    const whatsappUrl = `https://wa.me/+2348104081742?text=${encodeURIComponent(message)}`;
     const { t, } = useTranslation();
     return (
         <section className="relative h-120 sm:h-120 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
@@ -52,7 +55,7 @@ function HeroSection() {
 
 
                                 <div className="flex justify-center gap-4 slide-up-delay2">
-                                    <a>
+                                    <a target="_blank" rel="noopener noreferrer" href={whatsappUrl}>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                             {t("joinButton2")}
                                         </button>
@@ -82,7 +85,7 @@ function HeroSection() {
                                 </h1>
 
                                 <div className="flex justify-center gap-4 slide-up-delay2">
-                                    <a href="#">
+                                    <a target="_blank" rel="noopener noreferrer" href={whatsappUrl}>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                             {t("joinButton2")}
                                         </button>
