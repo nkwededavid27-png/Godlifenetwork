@@ -13,7 +13,7 @@ import MediaCard from '../components/MediaCard'
 import Gallery from "../components/Gallery";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
-import christmascarol from "../video/christmas-carol.mp4"
+
 
 
 
@@ -104,7 +104,7 @@ export default function Media() {
               onTimeUpdate={handleTimeUpdate}
             >
               <source
-                src={christmascarol}
+                src=""
                 type="video/mp4"
               />
             </video>
