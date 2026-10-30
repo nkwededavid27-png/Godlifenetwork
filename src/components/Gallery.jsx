@@ -76,6 +76,7 @@ export default function Gallery() {
         "/IMG_2797.jpg",
         "/IMG_2803.jpg",
         "/IMG_2804.jpg",
+        "/nforsale.jpg"
     ];
 
     const [visibleImages, setVisibleImages] = useState(4);

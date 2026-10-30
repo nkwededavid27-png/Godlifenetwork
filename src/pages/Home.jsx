@@ -6,6 +6,7 @@ import img1 from '../assets/img1.jpeg'
 import AOFPP from '../assets/AOFPP.jpg'
 import AOWF from '../assets/AOWF.jpg'
 import { NavLink } from "react-router-dom";
+import ImageSlideshow from "../components/image-carousel";
 
 
 
@@ -16,23 +17,30 @@ export default function Home() {
         <div className=" border-red-600 shadow-lg shadow-red-600 ">
             <HeroSection />
 
-            <div className="text-center pt-20 p-5 lg:p-10  ">
-                <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">
-                    {t("welcomeHome")}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10 p-5">
+                <div className="text-center pt-20 p-5 lg:p-10  ">
+                    <div className="btn bg-red-200 text-center text-red-600 p-5 rounded-4xl ">
+                        {t("welcomeHome")}
+                    </div>
+
+                    <h1 className="font-bold text-white pt-10 text-3xl sm:text-4xl lg:text-6xl ">
+                        {t("welcomeTitle")}{" "}
+                        <span className="bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent">
+                            {t("welcomeTitle1")}
+                        </span>
+                    </h1>
+                    <p className="text-lg lg:text-2xl text-center font-black pt-10">
+                        {t("welcomeDesc")} <br />
+                        <span className="bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent">{t("welcomeDesc1")}</span>
+                    </p>
+
                 </div>
 
-                <h1 className="font-bold text-white pt-10 text-3xl sm:text-4xl lg:text-6xl ">
-                    {t("welcomeTitle")}{" "}
-                    <span className="bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent">
-                        {t("welcomeTitle1")}
-                    </span>
-                </h1>
-                <p className="text-lg lg:text-2xl text-center font-black pt-10">
-                    {t("welcomeDesc")} <br />
-                    <span className="bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 bg-clip-text text-transparent">{t("welcomeDesc1")}</span>
-                </p>
-
+                <div>
+                    <ImageSlideshow />
+                </div>
             </div>
+
 
             <div className="text-center p-5 bg-white rounded-3xl shadow-lg shadow-red-600 lg:m-4 m-3">
                 <h1 className="text-black uppercase p-3 lg:p-15 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black ">{t("Dhomologeo")}</h1>
@@ -98,49 +106,123 @@ export default function Home() {
                     {t("prevEventsDesc")}
                 </p>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-20 pb-20">
+                <div className="grid grid-cols-1 lg:grid-cols-1 gap-5 pt-20 pb-20">
 
-                    <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                    <div className="carousel carousel-end rounded-box gap-5">
+                        <div className="carousel-item">
+                            <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                  transition-transform duration-300 ">
+                                <figure className="px-10 pt-10">
+                                    <img src={img1} alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event1Title")}</h2>
+                                    <p>{t("event1Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="card bg-[#070606] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                  transition-transform duration-300 ">
+                                <figure className="px-10 pt-10">
+                                    <img src={AOWF} alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event2Title")}</h2>
+                                    <p>{t("event2Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                  transition-transform duration-300 ">
+                                <figure className="px-10 pt-10">
+                                    <img src={AOFPP} alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event3Title")}</h2>
+                                    <p>{t("event3Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
                   transition-transform duration-300 lg:hover:scale-105">
-                        <figure className="px-10 pt-10">
-                            <img src={img1} alt="Events" className="rounded-xl" />
-                        </figure>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title uppercase">{t("event1Title")}</h2>
-                            <p>{t("event1Desc")}</p>
-                            <div className="card-actions">
-                                <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                <figure className="px-10 pt-10">
+                                    <img src="/_MG_8450.PNG" alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event4Title")}</h2>
+                                    <p>{t("event4Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                  transition-transform duration-300 lg:hover:scale-105">
+                                <figure className="px-10 pt-10">
+                                    <img src="/access.jpg" alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event5Title")}</h2>
+                                    <p>{t("event5Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                  transition-transform duration-300 lg:hover:scale-105">
+                                <figure className="px-10 pt-10">
+                                    <img src="/identity.jpg" alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event6Title")}</h2>
+                                    <p>{t("event6Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
+                  transition-transform duration-300 lg:hover:scale-105">
+                                <figure className="px-10 pt-10">
+                                    <img src="/psalm-hymn.jpg" alt="Events" className="rounded-xl" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title uppercase">{t("event7Title")}</h2>
+                                    <p>{t("event7Desc")}</p>
+                                    <div className="card-actions">
+                                        <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card bg-[#070606] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
-                  transition-transform duration-300 lg:hover:scale-105">
-                        <figure className="px-10 pt-10">
-                            <img src={AOWF} alt="Events" className="rounded-xl" />
-                        </figure>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title uppercase">{t("event2Title")}</h2>
-                            <p>{t("event2Desc")}</p>
-                            <div className="card-actions">
-                                <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div className="card bg-[#000000] w-80 lg:w-96 shadow-sm rounded-2xl m-auto 
-                  transition-transform duration-300 lg:hover:scale-105">
-                        <figure className="px-10 pt-10">
-                            <img src={AOFPP} alt="Events" className="rounded-xl" />
-                        </figure>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title uppercase">{t("event3Title")}</h2>
-                            <p>{t("event3Desc")}</p>
-                            <div className="card-actions">
-                                <NavLink to='/media#gallery' className="btn btn-primary pr-20 pl-20">{t("viewMoreBtn")}</NavLink>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+
+
 
                 </div>
 
@@ -207,7 +289,7 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 pt-20">
                     <div className="h-full">
-                        <div className="card-elegant overflow-hidden cursor-pointer h-full flex flex-col group hover:shadow-xl transition-shadow duration-300">
+                        <div className="card-elegant overflow-hidden cursor-pointer h-full flex flex-col group hover:shadow-xl  duration-300  bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-10 hover:bg-white/10 transition-colors group w-full   shadow-lg shadow-[#000000] ">
                             {/* Top section */}
                             <div className="relative h-48 overflow-hidden shrink-0">
                                 <div className="w-full h-full flex items-center justify-center text-white text-2xl font-bold bg-blue-500">

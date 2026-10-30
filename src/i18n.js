@@ -57,6 +57,18 @@ i18n.use(initReactI18next).init({
         event3Title: "Jesus praise party October 2025",
         event3Desc:
           "Here are more beautiful picture highlights from our time of intense praise, worship, and thanksgiving. God was truly in our midst!",
+        event4Title: "Christmass Carol 2025 Edition",
+        event4Desc:
+          "View the beautiful moment we had in God's presence on Christmass Carol 2025.Head to the media page to view some of the pictures.",
+        event5Title: "AOF June 2025 Edition",
+        event5Desc:
+          "What a beautiful time we had in God's presence, His presence was overwhelming. Head to the media page to view some of the pictures.",
+        event6Title: "AOF July 2025 Edition",
+        event6Desc:
+          "We are born with the identity of God in Christ Jesus, We are born in his image. Head to the media page to view some of the pictures.",
+        event7Title: "AOF August 2025 Edition",
+        event7Desc:
+          "Alter of Worship-Not for Sale was mind blowing and powerful in the presence of God. Head to the media page to view some of the pictures.",
         viewMoreBtn: "View more",
 
         aboutTitle: "About us",
@@ -487,6 +499,21 @@ i18n.use(initReactI18next).init({
         event3Title: "fête de louange de Jésus octobre 2025",
         event3Desc:
           "Voici d'autres magnifiques moments de louange intense, d'adoration et de remerciement. Dieu était vraiment au milieu de nous !",
+        event4Title: "Chants de Noël 2025",
+        event4Desc:
+          "Découvrez les merveilleux moments que nous avons vécus dans la présence de Dieu lors des Chants de Noël 2025. Rendez-vous sur la page Média pour voir quelques photos.",
+
+        event5Title: "AOF Édition Juin 2025",
+        event5Desc:
+          "Quel merveilleux moment nous avons passé dans la présence de Dieu ! Sa présence était bouleversante. Rendez-vous sur la page Média pour voir quelques photos.",
+
+        event6Title: "AOF Édition Juillet 2025",
+        event6Desc:
+          "Nous sommes nés avec l'identité de Dieu en Jésus-Christ. Nous sommes créés à son image. Rendez-vous sur la page Média pour voir quelques photos.",
+
+        event7Title: "AOF Édition Août 2025",
+        event7Desc:
+          "Autel d'Adoration - Pas à Vendre a été puissant et extraordinaire dans la présence de Dieu. Rendez-vous sur la page Média pour voir quelques photos.",
         viewMoreBtn: "Voir plus",
 
         aboutTitle: "À propos de nous",

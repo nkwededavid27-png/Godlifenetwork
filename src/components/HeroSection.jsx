@@ -22,15 +22,20 @@ function HeroSection() {
                 modules={[Autoplay, EffectFade]}
                 className="h-full"
                 onSlideChange={(swiper) => {
-                    // remove active from all slides
                     swiper.slides.forEach((slide) => {
-                        slide.querySelectorAll(".slide-up, .slide-up-delay, .slide-up-delay2")
+                        slide
+                            .querySelectorAll(
+                                ".slide-left, .slide-right, .slide-left-delay, .slide-right-delay"
+                            )
                             .forEach((el) => el.classList.remove("active"));
                     });
 
-                    // add active to current slide
                     const currentSlide = swiper.slides[swiper.activeIndex];
-                    currentSlide.querySelectorAll(".slide-up, .slide-up-delay, .slide-up-delay2")
+
+                    currentSlide
+                        .querySelectorAll(
+                            ".slide-left, .slide-right, .slide-left-delay, .slide-right-delay"
+                        )
                         .forEach((el) => el.classList.add("active"));
                 }}
 
@@ -48,13 +53,13 @@ function HeroSection() {
                             <div className="text-center max-w-4xl p-3">
                                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 
                                     bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 
-                                    bg-clip-text text-transparent uppercase slide-up"
+                                    bg-clip-text text-transparent uppercase slide-left"
                                 >
                                     {t("heroTitle1")}
                                 </h1>
 
 
-                                <div className="flex justify-center gap-4 slide-up-delay2">
+                                <div className="flex justify-center gap-4 slide-right">
                                     <a target="_blank" rel="noopener noreferrer" href={whatsappUrl}>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                             {t("joinButton2")}
@@ -80,11 +85,11 @@ function HeroSection() {
                             <div className="text-center max-w-4xl p-3">
                                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 
                                     bg-linear-to-r from-red-700 via-yellow-500 to-pink-500 
-                                    bg-clip-text text-transparent uppercase slide-up">
+                                    bg-clip-text text-transparent uppercase slide-left">
                                     {t("heroTitle2")}
                                 </h1>
 
-                                <div className="flex justify-center gap-4 slide-up-delay2">
+                                <div className="flex justify-center gap-4 slide-right-delay">
                                     <a target="_blank" rel="noopener noreferrer" href={whatsappUrl}>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                             {t("joinButton2")}
@@ -109,11 +114,11 @@ function HeroSection() {
                             <div className="text-center max-w-4xl p-3">
                                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 
                                     bg-linear-to-r from-red-500 via-yellow-500 to-pink-500 
-                                    bg-clip-text text-transparent uppercase slide-up">
+                                    bg-clip-text text-transparent uppercase slide-left">
                                     {t("heroTitle3")}
                                 </h1>
 
-                                <div className="flex justify-center gap-4 slide-up-delay2">
+                                <div className="flex justify-center gap-4 slide-right-delay">
                                     <NavLink to='/Event'>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">
                                             {t("joinButton3")}
