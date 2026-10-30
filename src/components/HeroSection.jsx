@@ -7,9 +7,7 @@ import { NavLink } from "react-router-dom";
 
 
 function HeroSection() {
-    const message = "Hello, I'm charting from Godlife Network Website. I want to join the community and I would like to learn more about Godlife Network.";
-
-    const whatsappUrl = `https://wa.me/+2348104081742?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://chat.whatsapp.com/FUe5VoeiCns0lbQP6OSZAU?s=cl&p=a&mlu=4&ilr=4&iam=2`;
     const { t, } = useTranslation();
     return (
         <section className="relative h-120 sm:h-120 md:h-screen lg:h-screen overflow-hidden bg-black  border-red-600 shadow-lg shadow-red-600 ">
