@@ -55,8 +55,7 @@ function HeroSection() {
                                 >
                                     {t("heroTitle1")}
                                 </h1>
-
-
+ 
                                 <div className="flex justify-center gap-4 slide-right">
                                     <a target="_blank" rel="noopener noreferrer" href={whatsappUrl}>
                                         <button className="px-6 py-3 bg-white/10 text-white border border-white/30 rounded-lg font-semibold">

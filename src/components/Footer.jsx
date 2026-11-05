@@ -74,27 +74,27 @@ export default function Footer() {
                     <h6 className="uppercase text-red-600 font-bold">
                         {t("footerQuickLinks")}
                     </h6>
-                    <NavLink to="/">
+                    <NavLink to="/" className="text-2xl hover:underline">
                         {t("footerHome")}
                     </NavLink>
 
-                    <NavLink to="/about">
+                    <NavLink to="/about" className="text-2xl hover:underline">
                         {t("footerAbout")}
                     </NavLink>
 
-                    <NavLink to="/event">
+                    <NavLink to="/event" className="text-2xl hover:underline">
                         {t("footerEvents")}
                     </NavLink>
 
-                    <NavLink to="/blog">
+                    <NavLink to="/blog" className="text-2xl hover:underline">
                         {t("footerBlog")}
                     </NavLink>
 
-                    <NavLink to="/media">
+                    <NavLink to="/media" className="text-2xl hover:underline">
                         {t("footerMedia")}
                     </NavLink>
 
-                    <NavLink to="/contact">
+                    <NavLink to="/contact" className="text-2xl hover:underline">
                         {t("footerContact")}
                     </NavLink>
                 </nav>
