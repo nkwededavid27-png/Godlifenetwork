@@ -20,20 +20,9 @@ export default function Media() {
 
   const { t } = useTranslation();
 
-
-
-
-
-  
-
-
-
   const mediaMessages = t("mediaMessages", {
     returnObjects: true,
   });
-
-
-
 
   return (
     <div className=" min-h-screen  border-red-600 shadow-lg shadow-red-600 ">
