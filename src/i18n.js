@@ -280,10 +280,10 @@ i18n.use(initReactI18next).init({
 
         featuredMessageTitle: "Featured Message",
 
-        featuredVideoTitle: "Christmas Carol",
+        featuredVideoTitle: "Not for Sale",
 
         featuredVideoDescription:
-          "Discover how God's grace empowers believers to live victorious lives.",
+          "Not for Sale is a powerful message that challenges believers to live a life of integrity, purity, and devotion to God. It explores the dangers of compromising our faith and values in a world that often tempts us to sell out for temporary gain. Through biblical teachings and real-life examples, this message encourages us to stand firm in our convictions and remain steadfast in our commitment to Christ.",
 
         watchNowButton: "Watch Now",
 
@@ -725,10 +725,10 @@ i18n.use(initReactI18next).init({
 
         featuredMessageTitle: "Message en Vedette",
 
-        featuredVideoTitle: "Chants de Noël",
+        featuredVideoTitle: "Pas à Vendre",
 
         featuredVideoDescription:
-          "Découvrez comment la grâce de Dieu permet aux croyants de vivre une vie victorieuse.",
+          "Pas à Vendre est un message puissant qui met au défi les croyants de vivre une vie d'intégrité, de pureté et de dévotion à Dieu. Il explore les dangers de compromettre notre foi et nos valeurs dans un monde qui nous tente souvent de vendre notre âme pour un gain temporaire. À travers des enseignements bibliques et des exemples de la vie réelle, ce message nous encourage à rester fermes dans nos convictions et à demeurer inébranlables dans notre engagement envers Christ.",
 
         watchNowButton: "Regarder Maintenant",
 

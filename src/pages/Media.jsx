@@ -5,10 +5,10 @@ import {
   Video,
 
 } from "lucide-react";
-import { Pause } from "lucide-react";
-import { useRef } from "react";
-import { useState } from "react";
-import featuredvideo from '../assets/featured-Video-Cover.jpg'
+
+
+
+
 import MediaCard from '../components/MediaCard'
 import Gallery from "../components/Gallery";
 import { useTranslation } from "react-i18next";
@@ -18,41 +18,15 @@ import { NavLink } from "react-router-dom";
 
 
 export default function Media() {
-  const videoRef = useRef(null);
+
   const { t } = useTranslation();
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
 
-  const handlePlay = () => {
-    videoRef.current.play();
-    setIsPlaying(true);
-  };
 
-  const handlePause = () => {
-    videoRef.current.pause();
-    setIsPlaying(false);
-  };
 
-  const handleTimeUpdate = () => {
-    const video = videoRef.current;
 
-    if (video.duration) {
-      const percentage =
-        (video.currentTime / video.duration) * 100;
 
-      setProgress(percentage);
-    }
-  };
+  
 
-  const handleSeek = (e) => {
-    const video = videoRef.current;
-    const value = e.target.value;
-
-    video.currentTime =
-      (video.duration * value) / 100;
-
-    setProgress(value);
-  };
 
 
   const mediaMessages = t("mediaMessages", {
@@ -97,49 +71,16 @@ export default function Media() {
 
           {/* VIDEO */}
           <div className="space-y-4">
-            <video
-              ref={videoRef}
-              className="w-full rounded-xl shadow-lg"
-              poster={featuredvideo}
-              onTimeUpdate={handleTimeUpdate}
-            >
-              <source
-                src=""
-                type="video/mp4"
-              />
-            </video>
+            <iframe
+              className="w-full rounded-xl shadow-lg aspect-video"
+              src="https://www.youtube.com/embed/HPoXAhseoIo"
+              title="Christmas Carol"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
 
             {/* CUSTOM CONTROLS */}
-            <div className="bg-gray-100 p-4 rounded-lg shadow">
-              <div className="flex items-center gap-4">
-
-                {isPlaying ? (
-                  <button
-                    onClick={handlePause}
-                    className="bg-red-600 text-white p-3 rounded-full hover:bg-red-700"
-                  >
-                    <Pause size={20} />
-                  </button>
-                ) : (
-                  <button
-                    onClick={handlePlay}
-                    className="bg-green-600 text-white p-3 rounded-full hover:bg-green-700"
-                  >
-                    <Play size={20} />
-                  </button>
-                )}
-
-                {/* PROGRESS BAR */}
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value={progress}
-                  onChange={handleSeek}
-                  className="w-full accent-red-600 cursor-pointer"
-                />
-              </div>
-            </div>
+            
           </div>
 
           {/* TEXT */}
@@ -152,13 +93,7 @@ export default function Media() {
               {t("featuredVideoDescription")}
             </p>
 
-            <button
-              onClick={handlePlay}
-              className="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700"
-            >
-              <Play size={20} />
-              {t("watchNowButton")}
-            </button>
+            
           </div>
 
         </div>
