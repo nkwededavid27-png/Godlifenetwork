@@ -1,6 +1,5 @@
 import {
   Play,
-  Headphones,
   ImageIcon,
   Video,
 
@@ -102,7 +101,7 @@ export default function Media() {
       {/* MEDIA CATEGORIES */}
 
       <section className="py-12 px-5 lg:px-12">
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
 
           <NavLink to='/blog#sermon' className="bg-white p-8 rounded-xl shadow text-center">
             <Play size={40} className="mx-auto text-red-600 mb-4" />
@@ -111,12 +110,6 @@ export default function Media() {
             </h3>
           </NavLink >
 
-          <NavLink to='' className="bg-white p-8 rounded-xl shadow text-center">
-            <Headphones size={40} className="mx-auto text-red-600 mb-4" />
-            <h3 className="font-bold text-gray-950 text-lg">
-              {t("mediaCategoryPodcasts")}
-            </h3>
-          </NavLink >
 
           <NavLink to='#gallery' className="bg-white p-8 rounded-xl shadow text-center">
             <ImageIcon size={40} className="mx-auto text-red-600 mb-4" />
